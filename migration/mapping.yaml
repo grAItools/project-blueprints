@@ -1,0 +1,2159 @@
+schema_version: 1
+source_commit: b90867e82cd2a06ec3a01bea8d86d4f9a2882048
+actor: codex/okf-migration-v1
+generated_at: '2026-11-02T13:16:03Z'
+review_status: pending-maintainer-content-review
+sources:
+  README.md:
+    sha256: 41389452f0a21bfd56fc73491cfeb01541e061583b901abd43cbe8cbf47f8e98
+    headings:
+    - title: project-blueprints
+      slug: project-blueprints
+      level: 1
+      line: 0
+      destination_slug: project-blueprints
+    - title: Contents
+      slug: contents
+      level: 2
+      line: 4
+      destination_slug: contents
+    - title: Credits
+      slug: credits
+      level: 2
+      line: 18
+      destination_slug: credits
+    units:
+    - id: README.md:1-4
+      start: 0
+      end: 4
+      sha256: e1245b115c5b024f709c57f08af4cd2995011485f534ceac8b0a426fa77480a7
+      concept: selection
+      owner: selection
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 0
+        end: 1
+        sha256: 3bdbc0cff2ff307303895b0837284890653fc5097ea3b8f1f7bb8f50bd57a785
+      - type: paragraph_open
+        start: 2
+        end: 3
+        sha256: eb80a777a20e23f018dd8d8a23e6eba1b9cebd2e794f61ff67ca6c921c47164d
+    - id: README.md:5-18
+      start: 4
+      end: 18
+      sha256: 66e5b41c1b829a194547b31288135568923e177fa94d2f44c41b0e4be2d86d8b
+      concept: selection
+      owner: selection
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 4
+        end: 5
+        sha256: 3016de4748ccc618d6742be54ad48b9da3df827b2f1f9588a1ea7e77c1a1dc75
+      - type: bullet_list_open
+        start: 6
+        end: 10
+        sha256: e1395d129639d785bb06c8d8c6321f9b1230ac71c94bae057640aaa40d3883a9
+      - type: paragraph_open
+        start: 10
+        end: 15
+        sha256: 6596111ea5b2fe91f203202e99b46fce291d83fef0a1c79b4fd050c031e9f749
+      - type: paragraph_open
+        start: 16
+        end: 17
+        sha256: b6f3d181b933d884ec8e5460e3d11dc63d4dd98d43d27ea02638867122408569
+    - id: README.md:19-21
+      start: 18
+      end: 21
+      sha256: 3f48dd291bb5c8b5c813ca62f4c8bd4ea271ac943f121cf078a2865990cefb05
+      concept: selection
+      owner: selection
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 18
+        end: 19
+        sha256: 5c65a82d9ff5a517657181198a0ab15cde6777859a6e08881288038c371a3f90
+      - type: paragraph_open
+        start: 20
+        end: 21
+        sha256: 7a41ed8190832b2949954208f8c03fe417b01242e735bef4853cead0c5dc4189
+  harness-agnostic-project.md:
+    sha256: 4a88c147f51a4b4767891526cfc7e56a69cb8f415369a6c90505ed80c3cd6423
+    headings:
+    - title: Harness-Agnostic Project Blueprint
+      slug: harness-agnostic-project-blueprint
+      level: 1
+      line: 0
+      destination_slug: harness-agnostic-project-blueprint
+    - title: Scope and Terminology
+      slug: scope-and-terminology
+      level: 2
+      line: 9
+      destination_slug: scope-and-terminology
+    - title: The Core Principle
+      slug: the-core-principle
+      level: 2
+      line: 23
+      destination_slug: the-core-principle
+    - title: 'Part A: New Project Repository Template'
+      slug: part-a-new-project-repository-template
+      level: 2
+      line: 35
+      destination_slug: part-a-new-project-repository-template
+    - title: A.1 Directory Layout
+      slug: a1-directory-layout
+      level: 3
+      line: 37
+      destination_slug: a1-directory-layout
+    - title: A.2 Instructions (AGENTS.md)
+      slug: a2-instructions-agentsmd
+      level: 3
+      line: 64
+      destination_slug: a2-instructions-agentsmd
+    - title: A.3 Skills (SKILL.md)
+      slug: a3-skills-skillmd
+      level: 3
+      line: 80
+      destination_slug: a3-skills-skillmd
+    - title: A.4 MCP Configuration
+      slug: a4-mcp-configuration
+      level: 3
+      line: 221
+      destination_slug: a4-mcp-configuration
+    - title: A.5 Harness-Specific Files (Leave As-Is)
+      slug: a5-harness-specific-files-leave-as-is
+      level: 3
+      line: 268
+      destination_slug: a5-harness-specific-files-leave-as-is
+    - title: A.6 Automation
+      slug: a6-automation
+      level: 3
+      line: 280
+      destination_slug: a6-automation
+    - title: A.7 .gitignore
+      slug: a7-gitignore
+      level: 3
+      line: 308
+      destination_slug: a7-gitignore
+    - title: A.8 `.agents/README.md` Template
+      slug: a8-agentsreadmemd-template
+      level: 3
+      line: 347
+      destination_slug: a8-agentsreadmemd-template
+    - title: A.9 New Project Repository Checklist
+      slug: a9-new-project-repository-checklist
+      level: 3
+      line: 397
+      destination_slug: a9-new-project-repository-checklist
+    - title: 'Part B: Migration Guide'
+      slug: part-b-migration-guide
+      level: 2
+      line: 410
+      destination_slug: part-b-migration-guide
+    - title: B.1 Assessment
+      slug: b1-assessment
+      level: 3
+      line: 412
+      destination_slug: b1-assessment
+    - title: B.2 Classification Matrix
+      slug: b2-classification-matrix
+      level: 3
+      line: 429
+      destination_slug: b2-classification-matrix
+    - title: B.3 Migration Steps by Layer
+      slug: b3-migration-steps-by-layer
+      level: 3
+      line: 440
+      destination_slug: b3-migration-steps-by-layer
+    - title: B.4 Archetype-Specific Guidance
+      slug: b4-archetype-specific-guidance
+      level: 3
+      line: 459
+      destination_slug: b4-archetype-specific-guidance
+    - title: B.5 Decision Tree
+      slug: b5-decision-tree
+      level: 3
+      line: 483
+      destination_slug: b5-decision-tree
+    - title: B.6 Ongoing Maintenance
+      slug: b6-ongoing-maintenance
+      level: 3
+      line: 494
+      destination_slug: b6-ongoing-maintenance
+    - title: Sources
+      slug: sources
+      level: 2
+      line: 506
+      destination_slug: sources
+    units:
+    - id: harness-agnostic-project.md:1-9
+      start: 0
+      end: 9
+      sha256: 56c644d6695e2186da4bb65811f0daf787b40ed3c2b92310306ad9dfa25776f0
+      concept: profiles/harness-agnostic
+      owner: profiles/harness-agnostic
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 0
+        end: 1
+        sha256: e6c190d81d3102d01c75996bc858820db780836de933ad5dfba1c22e5c952c0b
+      - type: paragraph_open
+        start: 2
+        end: 5
+        sha256: 9305b2c0faececb23418865d9f60c0f33426c744b235c00123b93afe9d0ee6ed
+      - type: paragraph_open
+        start: 6
+        end: 8
+        sha256: bd739750e75fbe4958df8c66b23f8c174b8c63ef6124f7fb83d8149dffb73271
+    - id: harness-agnostic-project.md:10-23
+      start: 9
+      end: 23
+      sha256: 0725e846f1613555dd1c2a51a8ca9b5f1c545ffff3099b50b2b32d6b89d09c80
+      concept: profiles/harness-agnostic
+      owner: profiles/harness-agnostic
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 9
+        end: 10
+        sha256: 3eda6552476323fc9ead737139d25050049e3d0dd97b6a0071b8646828d23efd
+      - type: paragraph_open
+        start: 11
+        end: 12
+        sha256: 291d4e9a0909244aac6b550566e13d7e802b17130654dc8ac3cc0236c8d40329
+      - type: paragraph_open
+        start: 13
+        end: 14
+        sha256: 6e146f1611afb655f574065fa0d1c4f35f1fb627f4eceb186ccc67ce94114eed
+      - type: paragraph_open
+        start: 15
+        end: 16
+        sha256: 95902e7cc99420777d0cb7e3a3a766f5c90c5a7dc3abbebd285cedc9803c6efd
+      - type: paragraph_open
+        start: 17
+        end: 18
+        sha256: 097accbf7e52e03021f32f3905ce7adcbc269361baca436c590d03ff87dda753
+      - type: paragraph_open
+        start: 19
+        end: 20
+        sha256: 7948219396df044e1e8581e42ce0c86cfb197ecfbfcd2efa6668e01abd67c7ed
+      - type: hr
+        start: 21
+        end: 22
+        sha256: f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090
+    - id: harness-agnostic-project.md:24-35
+      start: 23
+      end: 35
+      sha256: eba0c78dede8ea16b02a7d6738b337db56b2864e19d0bde18bcb7e2d74a1fb4a
+      concept: profiles/harness-agnostic
+      owner: profiles/harness-agnostic
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 23
+        end: 24
+        sha256: e58122bf518ed6ab3dff2aad4c90f3c550c17433cf7350129522da42c1004ca8
+      - type: paragraph_open
+        start: 25
+        end: 26
+        sha256: 9f97d78909d86d2a6e5d1ebd6a470542eee90d8a210a8b345d0597f55b736179
+      - type: table_open
+        start: 27
+        end: 32
+        sha256: d3b8cac48caba573c5e3e2929d1ab98e98205509e291d85af4cac3628deac786
+      - type: hr
+        start: 33
+        end: 34
+        sha256: f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090
+    - id: harness-agnostic-project.md:36-37
+      start: 35
+      end: 37
+      sha256: f5255584753cef12647e302bc1571f1dee3e51656e73bcb3f6b96282f3951663
+      concept: profiles/harness-agnostic
+      owner: profiles/harness-agnostic
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 35
+        end: 36
+        sha256: fadf4d7f736ec6741f84f15869ec71941a9f7eb119f73fc25bfe98c428b4cbf4
+    - id: harness-agnostic-project.md:38-64
+      start: 37
+      end: 64
+      sha256: e15c631a8c3e6cdf4f881c30f71ea738a868a748a3dc34c2570be30757ee82b6
+      concept: foundation/instructions
+      owner: foundation/instructions
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 37
+        end: 38
+        sha256: 3d125c632f1f89b85acb542d1a667eed49f7b62ad8a85b70630d0d065625bd61
+      - type: fence
+        start: 39
+        end: 63
+        sha256: f4b05677552a2f4e3d07c3512375a384b33b20823ef1b9b9d92a9d07c29245fc
+    - id: harness-agnostic-project.md:65-80
+      start: 64
+      end: 80
+      sha256: 999b85167e4962c65574b82183953f064a1e0cadd9c1af67b68bbf317b1e2946
+      concept: foundation/instructions
+      owner: foundation/instructions
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 64
+        end: 65
+        sha256: c6aec14e3becc0f022693cda6f1a39cbb9ae1dc128992b49448bc43961b40324
+      - type: paragraph_open
+        start: 66
+        end: 67
+        sha256: ae4b09dcad59fcf1bd90edf3f03cc6cc9f3a106a46a7416da83afd6fd7ef79d1
+      - type: bullet_list_open
+        start: 68
+        end: 76
+        sha256: 549d1b91d34d5afdbb285de9ff3bb877efffe74bcfb38930846386f8bcfb51da
+      - type: paragraph_open
+        start: 76
+        end: 77
+        sha256: 2d73dafa70fb16322bd15a0c9c29f70c95b2e3311b2d247dae55a135030bf53d
+      - type: paragraph_open
+        start: 78
+        end: 79
+        sha256: b214850eaa0c3e2d7bec6ec770b83f961e6ce75ab45b754d59a90c8241f30967
+    - id: harness-agnostic-project.md:81-221
+      start: 80
+      end: 221
+      sha256: 01700cdda20ff42873ec6dee7d9de147840290aad2576ea56773b651363e352c
+      concept: foundation/skills
+      owner: foundation/skills
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 80
+        end: 81
+        sha256: f3d1c87ce91c5546f44e9ba10ba796007dbc696730ea17eac60f633bc2a4b8e2
+      - type: paragraph_open
+        start: 82
+        end: 83
+        sha256: 0fd051fc552017e5654ce90916bb531eada276eb4ed3ada56e5175bcd1f04966
+      - type: fence
+        start: 84
+        end: 92
+        sha256: 243c216d7e99d7ad200d607faa0011ffaedc777d25487b4d1655daa91837e2e3
+      - type: paragraph_open
+        start: 93
+        end: 94
+        sha256: cdee2654c6e40fb30dd2802f9f8a62bad270223a3f779a7b675f8ebb1e2b47c9
+      - type: paragraph_open
+        start: 95
+        end: 96
+        sha256: 2403d450138078897e853b74d6f34d88666576a4a4c936558590942d0de8b2db
+      - type: paragraph_open
+        start: 97
+        end: 98
+        sha256: 310d5f35741699416d92f670dab11a0316c8ba1861d307183cc8cb34b3ab7e3a
+      - type: table_open
+        start: 99
+        end: 105
+        sha256: cba98955009ebb28f30bf358b1cff3e676baa6f393ac5782cffc437b5836e884
+      - type: paragraph_open
+        start: 106
+        end: 107
+        sha256: 24bfe3a49fc04be9639c5b51da45c3423147f4bca61c134c8d296b4929ca2824
+      - type: paragraph_open
+        start: 108
+        end: 109
+        sha256: d98f3021729b66f805742d903bc4d2262a9f30248096ed0507beadb1ddf92a1d
+      - type: paragraph_open
+        start: 110
+        end: 111
+        sha256: 22aaae293583621275c02589b5636a4c8143508f992a3314197174883f9582b4
+      - type: fence
+        start: 112
+        end: 204
+        sha256: 483d9f873f59a2f1827c02435d6a67fa67c6eb8dcc9f0a9ee7b9363142b8b459
+      - type: bullet_list_open
+        start: 205
+        end: 210
+        sha256: 3a728bd0551e216f5ff971a67a5a0eb8b244adfa4156710b4075268afe50cff6
+      - type: paragraph_open
+        start: 210
+        end: 211
+        sha256: f20c05b8847f916f302ca7ee8b581742610072612ce1ff0ef69e731271e09fcf
+      - type: fence
+        start: 212
+        end: 216
+        sha256: 79388e54f5666b006139cef1587e4d0fb0a9d414ed15e1fccbbf3eb61ce31c7b
+      - type: paragraph_open
+        start: 217
+        end: 218
+        sha256: f4324b6c59206a5baf0b6fb161de64573d93bef602335237b853389ce659677b
+      - type: paragraph_open
+        start: 219
+        end: 220
+        sha256: 6bc0cf8554e6eeaab472097df50f11dc7878063fbb0b96fe65d5963564f881ca
+    - id: harness-agnostic-project.md:222-268
+      start: 221
+      end: 268
+      sha256: 6896ccf36bcea45679281dbc67ab5a015483912fe1fac6d2aacf00db880543e4
+      concept: foundation/mcp-configuration
+      owner: foundation/mcp-configuration
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 221
+        end: 222
+        sha256: 0c0d06feba02f7d1fd5efb38445c0b21ee07a14254b37cc5f72099ed15fffa4f
+      - type: paragraph_open
+        start: 223
+        end: 224
+        sha256: 2db91cbd2468301876018fbe0b191119b825dfa99db4361cc65e194c2caef95d
+      - type: table_open
+        start: 225
+        end: 231
+        sha256: 0594acb380afaa9910d255ff88088141e0161ec1a48cf9081a4abf09b49309a5
+      - type: paragraph_open
+        start: 232
+        end: 233
+        sha256: 08b9b96efafb7d98fcdd235dcfd100c8688b1d1bf4af8755944ff7f0aa68a481
+      - type: fence
+        start: 234
+        end: 248
+        sha256: 4b78c078b5dcf1ea40ef1003ba4bfc77cb81cfafeb313103196c3a639d1a3b88
+      - type: paragraph_open
+        start: 249
+        end: 250
+        sha256: ac52388d7127a2d45eb240e40f227f01f8429cd36d8f3535e0cfb01c4fecbba9
+      - type: paragraph_open
+        start: 251
+        end: 252
+        sha256: 88270b1d079833e923771b9339d8d83e4623e0fc05bda97962768fc65fc1c75e
+      - type: bullet_list_open
+        start: 253
+        end: 264
+        sha256: 4d9a5f240722f95522467d07e0b65cb74c8e82724f2bd344d1df137fd25329f5
+      - type: paragraph_open
+        start: 264
+        end: 265
+        sha256: ece4f98114ae90e74bd088fc33e26fdfba2557b72fa60477cb446a592c1768f7
+      - type: paragraph_open
+        start: 266
+        end: 267
+        sha256: 3c81585322c58158e90b2dfbcf6f11d19e66646e24ba8b28377e945d436bd0f5
+    - id: harness-agnostic-project.md:269-280
+      start: 268
+      end: 280
+      sha256: b0c5a71a6ce4acf14ffc86563ebc70a43173a2954ffbcc793cab387918403768
+      concept: foundation/harness-adapters
+      owner: foundation/harness-adapters
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 268
+        end: 269
+        sha256: 1ead9483b9a18f29b1902efd3086297f2a06184a8cd0b3f09cca123dc75a4832
+      - type: table_open
+        start: 270
+        end: 277
+        sha256: 1e42494fb6e93c494ce49f3bd4814f32293901c909c4a0c89a40edad1b4c25e8
+      - type: paragraph_open
+        start: 278
+        end: 279
+        sha256: 6abba8cee14ee063f8623344dd70816ee2bc3642a28b5ee1f15da3006f9f4329
+    - id: harness-agnostic-project.md:281-308
+      start: 280
+      end: 308
+      sha256: 5b9ed7b88f365a5ba6de8f1f3c0a63d60c100b10f920af66c6027b41b2354242
+      concept: foundation/automation
+      owner: foundation/automation
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 280
+        end: 281
+        sha256: 5a8ae6afaed440585c492ff4d1bd69b8ac9490ef0b678582c4cd51519ffc522e
+      - type: paragraph_open
+        start: 282
+        end: 283
+        sha256: 8b9d6f3d77be73f9db40358fb5142ede251c460e23a53f9f6b8451b289b84c15
+      - type: fence
+        start: 284
+        end: 301
+        sha256: 3e4f7d145d462c780a6b4860c9c4f4b486b63f0a74c2aa75515c0123b0854b9b
+      - type: paragraph_open
+        start: 302
+        end: 303
+        sha256: 800495a828055c4f87d7cd830c7ce16ccb98df5a4b8a370a93d32c589449f6b2
+      - type: paragraph_open
+        start: 304
+        end: 305
+        sha256: 41e61fdeff8f0d94904a2a7af5f6468dbd5b764f53a159e6ab3782177d493167
+      - type: paragraph_open
+        start: 306
+        end: 307
+        sha256: e30bc764dad2f52b3580b69d300bfc9bbf63ed0b1285c5f8e5a8f37ec7e08b01
+    - id: harness-agnostic-project.md:309-347
+      start: 308
+      end: 347
+      sha256: 08f869a7a9115b6720df354337a9667f54cd273738a3596f2a117d8a9cae8f4a
+      concept: foundation/automation
+      owner: foundation/automation
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 308
+        end: 309
+        sha256: afd2cda82362d7221cfc39a7f6717ef1911a71469976c3916baa8df6f4c4fb8e
+      - type: fence
+        start: 310
+        end: 316
+        sha256: dbbb3f97f5c56a00b9bbd9a641cde410f323212d69c297bb9fefa30c246f7a3c
+      - type: paragraph_open
+        start: 317
+        end: 318
+        sha256: 201c178d7783d611a79d863f9910c03d8f5db185c8295d64dddccf757ba7d26e
+      - type: fence
+        start: 319
+        end: 346
+        sha256: fb769a7b7b8c0a62ec743cdb28538cd741d416efdefd57db65645167275f7065
+    - id: harness-agnostic-project.md:348-397
+      start: 347
+      end: 397
+      sha256: 82a6a74bacbdcb816c9769971a2903091871927b7d301115dfe65aef74a5bfd6
+      concept: foundation/instructions
+      owner: foundation/instructions
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 347
+        end: 348
+        sha256: 9fef301f3b152f6a52950d75e8692a52dd83b697773e078b03a1cf720d769d6e
+      - type: paragraph_open
+        start: 349
+        end: 350
+        sha256: d23687653a1726edc08815961ade16a5e7cf77eb0b9e31c5a951056e941811d8
+      - type: fence
+        start: 351
+        end: 396
+        sha256: 908e8a98e4470407fe5e81d87dc848d252560eebca8ea6ee6c7aea84f3c3fd80
+    - id: harness-agnostic-project.md:398-410
+      start: 397
+      end: 410
+      sha256: 68a16a0f4d171f42590f3b55be63a244d6db793df1f577b6d412c9082749369b
+      concept: profiles/harness-agnostic
+      owner: profiles/harness-agnostic
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 397
+        end: 398
+        sha256: eb4fdf3e2204ed7b35e7d0964712a19d89ae6ba497fd2b497a95354b4937af7b
+      - type: ordered_list_open
+        start: 399
+        end: 408
+        sha256: 67c5b111172f63672d23d8c52c4f084dbfa355bdb8e69025420817928f0129d0
+      - type: hr
+        start: 408
+        end: 409
+        sha256: f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090
+    - id: harness-agnostic-project.md:411-412
+      start: 410
+      end: 412
+      sha256: d31db3d307d92dc6fac832632f8a004bad56ee87c7cb1f348990ebfae38b95eb
+      concept: foundation/migration
+      owner: foundation/migration
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 410
+        end: 411
+        sha256: 4b9c5513df697188433d907a0bbd4c223f3e27ceec8397ae2637a1a724ad8007
+    - id: harness-agnostic-project.md:413-429
+      start: 412
+      end: 429
+      sha256: 3e550671a2687b401ff32d7037b39ab6a853b4ec612fd9f976559d9adc5678dc
+      concept: foundation/migration
+      owner: foundation/migration
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 412
+        end: 413
+        sha256: 80e91a9e1c29fe2aa962ed2038c78b5f69b98823cc5ed1a3e2b2895e67f8ea99
+      - type: fence
+        start: 414
+        end: 428
+        sha256: 73c49cf12f5c83626117b59ed56d8be10707dd9bf8ca3d4b0ee1178841bd5c58
+    - id: harness-agnostic-project.md:430-440
+      start: 429
+      end: 440
+      sha256: adb9a3b2322e3f35b31dc2eab4878bedb185ec7775faf3f8227d47ae4d848dde
+      concept: foundation/migration
+      owner: foundation/migration
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 429
+        end: 430
+        sha256: 34d0b48aa9b50c0bb3215ef2ba147577b8c4b67f477da2476d1d21e602da6c31
+      - type: table_open
+        start: 431
+        end: 439
+        sha256: 5e9191b7bd13f69b86a28910b4d80dcbd72e68419232e09c888c843142f8dffb
+    - id: harness-agnostic-project.md:441-459
+      start: 440
+      end: 459
+      sha256: e7db61bddd8fcf34cfdfeba78baab3c21fb56ea7ee406895531d65fe0fe03c1e
+      concept: foundation/migration
+      owner: foundation/migration
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 440
+        end: 441
+        sha256: c1dff1664138b85fcdd1ba864cf4c33eb16214e3505dfd985c7b53686b7cac2b
+      - type: paragraph_open
+        start: 442
+        end: 443
+        sha256: 086fd9c8a71dc83adc9ab45fc801fd0b422ca8873b2b74b9168d08fb14819023
+      - type: ordered_list_open
+        start: 444
+        end: 459
+        sha256: cc47ad93d6e08386a29eaf5c1a27d8dfc70fc7faa260f30df83dfb1c2c273ee3
+    - id: harness-agnostic-project.md:460-483
+      start: 459
+      end: 483
+      sha256: 8ef2844f1f731152f48775b3d77408093b743846c63d922dd16a344083a5f993
+      concept: foundation/migration
+      owner: foundation/migration
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 459
+        end: 460
+        sha256: f3afbb9b7fd2384783a97e55bbfa9c7a78c538965684e7e97b415b2905d25075
+      - type: paragraph_open
+        start: 461
+        end: 462
+        sha256: 9ff27be42443f0cd6d0e6aabca7b245cfb342e3e634a62ad6ee6b2eb4d7984e5
+      - type: paragraph_open
+        start: 463
+        end: 464
+        sha256: 6081252bd2a1944f7e89c9eb5821d601384c8b79c275265f08de0e1f9bf29574
+      - type: bullet_list_open
+        start: 465
+        end: 469
+        sha256: 57707912b9ec6ec5f6aaed2f6aa8365af453b65ac0e246cb7dab383e85414014
+      - type: paragraph_open
+        start: 469
+        end: 470
+        sha256: 7d312a97dfbdc5b9922ac03223e837e37a787d1fbb695881be56f8f0fcded00f
+      - type: bullet_list_open
+        start: 471
+        end: 483
+        sha256: a0aad13b7a81e4c4f8877ee0b53cc73ea5b589530f22669206af8500ac2e662a
+    - id: harness-agnostic-project.md:484-494
+      start: 483
+      end: 494
+      sha256: faea793f6a44b8d1a5cb238c1f082ff9fc8f0fabd87b41ae026ffe6454ebd004
+      concept: foundation/migration
+      owner: foundation/migration
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 483
+        end: 484
+        sha256: ba767c379a46b19889c4efae6de78e739dd581b4acb566b8359a90bf4a33d704
+      - type: fence
+        start: 485
+        end: 493
+        sha256: de8a3d0b39bed0c651aed562f6c4f84f02833fec6a90dedddd480c531c85036a
+    - id: harness-agnostic-project.md:495-506
+      start: 494
+      end: 506
+      sha256: 8ba751dc17c1600cf9f858454aa88baa6552c4602bae52b91ea0ee63c9fe95a7
+      concept: foundation/migration
+      owner: foundation/migration
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 494
+        end: 495
+        sha256: ec9285eb23f2b68220536349fb6512f30758c88046ec03081f0ba9a34ff25a39
+      - type: table_open
+        start: 496
+        end: 503
+        sha256: 176171b4c3df1422bea9bf0af7ac6a828aa7679c1efa31e758f4df029398e015
+      - type: hr
+        start: 504
+        end: 505
+        sha256: f52d711103d50a437830c6fbcd04fb4bab49a0f82f6d26d1c791c6e8488dd090
+    - id: harness-agnostic-project.md:507-521
+      start: 506
+      end: 521
+      sha256: 04bb86e010a58b9b23f69f0dbed382d7722793f8c0aa2dc6b6df23be6a1aab41
+      concept: profiles/harness-agnostic
+      owner: profiles/harness-agnostic
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 506
+        end: 507
+        sha256: 8a23b2f7befd3e34e37db86c490ee38b226bd1b0a95bf35097ad88cde8dcfec7
+      - type: table_open
+        start: 508
+        end: 521
+        sha256: 92946442e143b6ee752f8f5dfbba01804653a33f2630482b71401e37fd5582ce
+  python-project.md:
+    sha256: 1675cce870f310dbc09737eb221a5f8b3dc0ab841b706b5a551643e8cc460c21
+    headings:
+    - title: Python Project Repository Blueprint
+      slug: python-project-repository-blueprint
+      level: 1
+      line: 0
+      destination_slug: python-project-repository-blueprint
+    - title: 1. Design principles
+      slug: 1-design-principles
+      level: 2
+      line: 14
+      destination_slug: 1-design-principles
+    - title: 2. Default profile and project decisions
+      slug: 2-default-profile-and-project-decisions
+      level: 2
+      line: 32
+      destination_slug: 2-default-profile-and-project-decisions
+    - title: 3. Repository layout
+      slug: 3-repository-layout
+      level: 2
+      line: 66
+      destination_slug: 3-repository-layout
+    - title: 4. Package and dependency contracts
+      slug: 4-package-and-dependency-contracts
+      level: 2
+      line: 125
+      destination_slug: 4-package-and-dependency-contracts
+    - title: Metadata and distribution contents
+      slug: metadata-and-distribution-contents
+      level: 3
+      line: 127
+      destination_slug: metadata-and-distribution-contents
+    - title: Environments and compatibility
+      slug: environments-and-compatibility
+      level: 3
+      line: 171
+      destination_slug: environments-and-compatibility
+    - title: 5. One executable workflow
+      slug: 5-one-executable-workflow
+      level: 2
+      line: 218
+      destination_slug: 5-one-executable-workflow
+    - title: 6. Code quality and tests
+      slug: 6-code-quality-and-tests
+      level: 2
+      line: 297
+      destination_slug: 6-code-quality-and-tests
+    - title: Repository checks
+      slug: repository-checks
+      level: 3
+      line: 299
+      destination_slug: repository-checks
+    - title: Python linting and typing
+      slug: python-linting-and-typing
+      level: 3
+      line: 334
+      destination_slug: python-linting-and-typing
+    - title: Tests and coverage
+      slug: tests-and-coverage
+      level: 3
+      line: 376
+      destination_slug: tests-and-coverage
+    - title: 7. Documentation, CI, and release
+      slug: 7-documentation-ci-and-release
+      level: 2
+      line: 425
+      destination_slug: 7-documentation-ci-and-release
+    - title: Documentation and contributor policy
+      slug: documentation-and-contributor-policy
+      level: 3
+      line: 427
+      destination_slug: documentation-and-contributor-policy
+    - title: Continuous integration and maintenance
+      slug: continuous-integration-and-maintenance
+      level: 3
+      line: 459
+      destination_slug: continuous-integration-and-maintenance
+    - title: Release and artifact validation
+      slug: release-and-artifact-validation
+      level: 3
+      line: 503
+      destination_slug: release-and-artifact-validation
+    - title: 8. Acceptance checklist
+      slug: 8-acceptance-checklist
+      level: 2
+      line: 568
+      destination_slug: 8-acceptance-checklist
+    units:
+    - id: python-project.md:1-14
+      start: 0
+      end: 14
+      sha256: 732d21e8f5dcc567ca38a1956c0c0434cc4238254ab8899f9508bc4efac7a4d9
+      concept: profiles/python
+      owner: profiles/python
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 0
+        end: 1
+        sha256: 97eb412c5c2203c28c7c72688d3a7c147033666984821af50e88dfef6350d2bf
+      - type: paragraph_open
+        start: 2
+        end: 5
+        sha256: 6d05b3560144e70f7ee84a170f6cb4bc82caa6ae952dc8cac189a3d38f544482
+      - type: paragraph_open
+        start: 6
+        end: 9
+        sha256: 593f8d094aa5b8a18664024ddd1188f0694f641f0164561fcc6d1e60b7df5635
+      - type: paragraph_open
+        start: 10
+        end: 13
+        sha256: b20923a4e94810510c098c83865c4c17eef514595fbe85e57d6eb7678ea69fd5
+    - id: python-project.md:15-32
+      start: 14
+      end: 32
+      sha256: 0521ad55f17568b9888f1036b6ec93f16daef089652b95baceb441ffc76f593c
+      concept: profiles/python
+      owner: profiles/python
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 14
+        end: 15
+        sha256: 69583c04910a38caa1a679cf221481329fa1bdef74c96ec99b0ff06611e97c7f
+      - type: ordered_list_open
+        start: 16
+        end: 32
+        sha256: 9f5d9f2c38be4d3f2ed7449d13213d641e0b414ac877b38c130287f841f53f93
+    - id: python-project.md:33-66
+      start: 32
+      end: 66
+      sha256: 0798591d8bddeae802e223262900746b92ba92050122b14640c82f7c869d3e6f
+      concept: profiles/python
+      owner: profiles/python
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 32
+        end: 33
+        sha256: 28c7569209185a91285e7c75d68ccaae94c7d10a6446435332abcf3fcf15b125
+      - type: paragraph_open
+        start: 34
+        end: 37
+        sha256: dd84bc0822b8b6ec67d1ed0f1916b22c9b018eaedf2d8ec47bbdd6a814bfbf13
+      - type: table_open
+        start: 38
+        end: 51
+        sha256: b2bab35cb516bf7af988dd411f89cb0460751aa25545438d7a118a6bacc5594c
+      - type: paragraph_open
+        start: 52
+        end: 59
+        sha256: 55678e09a485d926c4e9a3de279d287adf7c7418016e39afca2bb330d390f0db
+      - type: paragraph_open
+        start: 60
+        end: 65
+        sha256: ed5d9659f59d7599426438a7e7e7b1817dbffaeeff5bc251bbe10cf439d8150d
+    - id: python-project.md:67-125
+      start: 66
+      end: 125
+      sha256: 4a9f2d09cca5d397a42cf6509d94ad1f5f417e73b88c88a5c197957e48dd33c5
+      concept: python/packaging
+      owner: python/packaging
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 66
+        end: 67
+        sha256: bd84541054a28b94e3ddfca19429396c60a4e6f587206e51bddfa0f80c5f7279
+      - type: paragraph_open
+        start: 68
+        end: 70
+        sha256: 7c887798fb76eb8a5997df2a8b600a3451de7f5396f1fb2b46b3413d4842d0e8
+      - type: fence
+        start: 71
+        end: 119
+        sha256: 3e80fcd06110ef0ad78376ad8a4138813d019c0e8913e49bb96d2f66ce6267c2
+      - type: paragraph_open
+        start: 120
+        end: 124
+        sha256: af61e59e55f0c266ca1cdb6f8e0aefd5535b75dc296cde157977ab39849fd056
+    - id: python-project.md:126-127
+      start: 125
+      end: 127
+      sha256: 0654e98f0c43bc8ca9dbbe7f99587cc0ed7f86df20ca320ac0ada0b87d3a21a5
+      concept: python/packaging
+      owner: python/packaging
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 125
+        end: 126
+        sha256: a3880c97e6cd301f4ec2c05231a161b744f621fc0d42c7f352d1658e2bbb001e
+    - id: python-project.md:128-171
+      start: 127
+      end: 171
+      sha256: 34d16a3bb6b6007c983f54d809fc1cadf6b0b0f9941064eede7525383fd04959
+      concept: python/packaging
+      owner: python/packaging
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 127
+        end: 128
+        sha256: a097e9b2818884553d434efd7f60cefe3abd453d986b52982704b222e1b208f7
+      - type: paragraph_open
+        start: 129
+        end: 138
+        sha256: b6f5bf845b22faa4891d3a561167a3bc1c5776d76b611cdcf3957023eb196e4b
+      - type: paragraph_open
+        start: 139
+        end: 146
+        sha256: fa7994cbb9ef7b0c313a8adcd755fd3dd5357088c4e6cd4d168d912e9024ab1e
+      - type: fence
+        start: 147
+        end: 151
+        sha256: c902c0e710b155bb4fd1f097aa92a5252aa5a279abfe12be2a1f227cf00a344e
+      - type: paragraph_open
+        start: 152
+        end: 159
+        sha256: 666dfbff46cf0f36dc170f7eeb16f02d3ffedad19c04f139bd18f76d0dacbc5e
+      - type: paragraph_open
+        start: 160
+        end: 165
+        sha256: 4de6dc0ceb824e05ebee05b7028e6a305ab74e45b4ac33fb1a45b0cda2a8cec5
+      - type: paragraph_open
+        start: 166
+        end: 170
+        sha256: f011b3def38009df0ba59ffcabe89f0fe1b510c3685659fa3c02416e275718a0
+    - id: python-project.md:172-218
+      start: 171
+      end: 218
+      sha256: 388b0d3172d4957e5f992bfe8e69be6635d2495cdc3b2f28f3ac866f31f669d5
+      concept: python/dependencies-and-compatibility
+      owner: python/dependencies-and-compatibility
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 171
+        end: 172
+        sha256: 37d8b9e9eddd34b65052a0e32a9eefe84825f7d3bbabac6501cfe3fcae75c48e
+      - type: paragraph_open
+        start: 173
+        end: 177
+        sha256: 70dcac9a7f780342c0ddad1734e16037cff8012f2467d57014927722c6f99e4a
+      - type: paragraph_open
+        start: 178
+        end: 187
+        sha256: cc21c6a059114e57378e650d5a58d11f0722bbc55a7155d0232878ac2d509b31
+      - type: paragraph_open
+        start: 188
+        end: 198
+        sha256: 11078f591bab9d887e3ccb7d053081b543c4412b582f23e646fe5ad9518097d8
+      - type: paragraph_open
+        start: 199
+        end: 204
+        sha256: 40b0ee47b38823c5d16389a092769933c9c44dd375730f6280cbeab76709948b
+      - type: paragraph_open
+        start: 205
+        end: 217
+        sha256: 1b7e8525204e534808dc6d4e9038d39589473c2ca256064bf742ef28e2fafa5d
+    - id: python-project.md:219-297
+      start: 218
+      end: 297
+      sha256: 9eb732de648b609f9754236b1516cc76de72e84c36b22700fb5a5e27df4ead8e
+      concept: python/executable-workflow
+      owner: python/executable-workflow
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 218
+        end: 219
+        sha256: a76ed816665658bedd3afb3ab7d52a59e1eddeb727d7da9e3549018740650c05
+      - type: paragraph_open
+        start: 220
+        end: 229
+        sha256: b1fcd60c7620070cf9142127603cc7a79c846d49651e0a24ca10de48c5d021a3
+      - type: paragraph_open
+        start: 230
+        end: 231
+        sha256: 0259bcbfe3c4861bccaf7564994522570df2bcb19f7651e87e45b340731306fc
+      - type: table_open
+        start: 232
+        end: 243
+        sha256: bdb9447c55561a81a7a7c8a96bdbfd78e987f995acadbb8db7a116a2678bf0d9
+      - type: paragraph_open
+        start: 244
+        end: 253
+        sha256: 222f0eb5c5831e09af8efb25065b527b3633db6e789567f1e250dcce5a3e3183
+      - type: fence
+        start: 254
+        end: 259
+        sha256: ca790a95d3ca700e9dc1b29665129fda3c4ff1adabd0b4d743ad7c4893b646c1
+      - type: paragraph_open
+        start: 260
+        end: 268
+        sha256: 5a2ec45ed2da942864f9bffe4d8248e44450ceb81a98fd9f148babdcd754e55e
+      - type: paragraph_open
+        start: 269
+        end: 280
+        sha256: ca623e6e8a6c28e179bb741e09063a6f79c59e590ec73776ca1b19a54992057e
+      - type: paragraph_open
+        start: 281
+        end: 291
+        sha256: 2e790e2c01f73a73fb164766c452b65c2a7cf876587dc3bddb5ba224bcaf7944
+      - type: paragraph_open
+        start: 292
+        end: 296
+        sha256: 2342c0795650c96cf26926d8b7fc0f910a3a5e4ca38ae86e4ba5ee8e1af80bfc
+    - id: python-project.md:298-299
+      start: 297
+      end: 299
+      sha256: 68dfd745d0ca3f66bfa584cc6fd384e92de148544fb5ec0eee61b4fda843abc1
+      concept: python/quality-and-testing
+      owner: python/quality-and-testing
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 297
+        end: 298
+        sha256: f23e07cf23997824e927def2c1253b587a54dad61ee2285bc75911e0d15fc10a
+    - id: python-project.md:300-334
+      start: 299
+      end: 334
+      sha256: 50039ed7d2357283e8c9cdcb949d11c05b0ccb3ea741ce66bcbdeb95fb3ec72b
+      concept: python/quality-and-testing
+      owner: python/quality-and-testing
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 299
+        end: 300
+        sha256: d1295bc711b1a6575f2a29e3b04809cda4771dc2dd2e5a9d84ac513c9b351800
+      - type: paragraph_open
+        start: 301
+        end: 311
+        sha256: 64049560c00db89fd75ace7b697e3d417f71c031f4ebb4038fadd533d26975a8
+      - type: paragraph_open
+        start: 312
+        end: 317
+        sha256: 24c9566fd4a2e93e73ec24e66d410831f2a7eba57491748faf74c41cc7ef0ed9
+      - type: paragraph_open
+        start: 318
+        end: 333
+        sha256: 4f46ef2e1af66884d4f6ddf5f1527dbfe766cf2f429ad714acfc8ff474e62484
+    - id: python-project.md:335-376
+      start: 334
+      end: 376
+      sha256: a1f65224625f6a544505499f1bee7f0e9d46fcb82c9aa81bcc43b260771aaa95
+      concept: python/quality-and-testing
+      owner: python/quality-and-testing
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 334
+        end: 335
+        sha256: 5cf27678ffe4b49506d07b679c829809d515196d3a69d5f51aa0de44aa854840
+      - type: paragraph_open
+        start: 336
+        end: 343
+        sha256: dfb6ed89569ca5d4fad8f82e808df62dee0cfe85f1f9ddc589a2c5d11d91aa1f
+      - type: paragraph_open
+        start: 344
+        end: 354
+        sha256: ee94a3bec3ac0084ec759432320d05e8af48c6fde7350f1e86b8280d412934e2
+      - type: paragraph_open
+        start: 355
+        end: 360
+        sha256: 43efd85be7ec2db6c7ab8e19b220f2436f4e55e6138c974ee803ad9331b813b4
+      - type: paragraph_open
+        start: 361
+        end: 375
+        sha256: 5e8293a0ac062f24796143f509fd09890a561b25ac1df48cc51545f1a53974a6
+    - id: python-project.md:377-425
+      start: 376
+      end: 425
+      sha256: b46cc9360f37cd2cfd2773b6af56081937ddd0f97f00ca0cf0a3d2dc7959da2d
+      concept: python/quality-and-testing
+      owner: python/quality-and-testing
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 376
+        end: 377
+        sha256: e1b5d8673939d513d925a19a8488bae60f105103fa7075447ec2a906abca6da2
+      - type: paragraph_open
+        start: 378
+        end: 380
+        sha256: b092a64a78188634de6f588d1a9d0477ad14dd0424edd11f32fcb65c375f375a
+      - type: fence
+        start: 381
+        end: 390
+        sha256: 04ad9a876e0b7dc3098090a22c76a197cac07fcb1d29ebd0941072bdb7e24f5d
+      - type: paragraph_open
+        start: 391
+        end: 397
+        sha256: 9df836c1b87360ac761d5d86862b12c1fd24ff807d7a3586a747f0aeb4e3ad71
+      - type: paragraph_open
+        start: 398
+        end: 404
+        sha256: 202cedc3fe5adba015112b2bf74756d02cfe2a7af37aeb9c33a2dfd76d021b20
+      - type: paragraph_open
+        start: 405
+        end: 411
+        sha256: 7abbca9e4f29b2365905cb24239bd49a101d9ee41ce4a6ace2c9265e21c28af2
+      - type: paragraph_open
+        start: 412
+        end: 419
+        sha256: 7723d5212ed45b25e2b228e2047225465a422da428f192b43c53bc927c6a873e
+      - type: paragraph_open
+        start: 420
+        end: 424
+        sha256: 9f4029e0a681220e3c0ae4a3d264c096a9d75e8fad114a8e69335401d1417e03
+    - id: python-project.md:426-427
+      start: 425
+      end: 427
+      sha256: c2c9e3bde18d74e75f38a9ef445bdd6b64d705a60ac5a8c6897f61f5860e0484
+      concept: python/documentation-ci-and-releases
+      owner: python/documentation-ci-and-releases
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 425
+        end: 426
+        sha256: 6b1ce663dcf0e61249252115c6e01be7dbd2343fcb14d71db994810b066b47b5
+    - id: python-project.md:428-459
+      start: 427
+      end: 459
+      sha256: ad5086fdb48293ef67de77b418f05f86d49e4c4890792dc4cec1accefeb5c71c
+      concept: python/documentation-ci-and-releases
+      owner: python/documentation-ci-and-releases
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 427
+        end: 428
+        sha256: e75d78780093f38f33018aba8312ce76537046838f3db8ba66b13e85d5873bbc
+      - type: paragraph_open
+        start: 429
+        end: 434
+        sha256: 97f5da01f13d597536c604eff0335d2b9463f1311930dff63764402ca4c4a392
+      - type: paragraph_open
+        start: 435
+        end: 440
+        sha256: fb2328b9ba5ee25b86eb465e4b036609836a24639e62d298a7180ec6991899bb
+      - type: paragraph_open
+        start: 441
+        end: 450
+        sha256: b3c88c1cf7618cd53fbc88d03257939534a6190f18882bd0554c598b116739e1
+      - type: paragraph_open
+        start: 451
+        end: 458
+        sha256: fd6d822502e1a025241c970df9a8ac7bf4976506f296fef276484ee0b84da6a6
+    - id: python-project.md:460-503
+      start: 459
+      end: 503
+      sha256: 46adf6e16b8dee59d0d1f95d58c9849527448f28ff28dff81056a52d51abbd14
+      concept: python/documentation-ci-and-releases
+      owner: python/documentation-ci-and-releases
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 459
+        end: 460
+        sha256: c6f7face3d2c8c9997af483d86e39d8b3e82eae523a843f4be78b61a4400beb2
+      - type: paragraph_open
+        start: 461
+        end: 470
+        sha256: a68730807aabbd2881cfd746f7b4b1be5a0a2eb848b06204551d23aaa5908e53
+      - type: paragraph_open
+        start: 471
+        end: 476
+        sha256: df2be727d3a6b728eb6a6f8f177cc8ba36e9f79306355e83cadea51209521601
+      - type: paragraph_open
+        start: 477
+        end: 487
+        sha256: 81bf5e0b387f5c2219d59abd066c14c2a55996a304b7c85bd3432b82f9d96352
+      - type: paragraph_open
+        start: 488
+        end: 492
+        sha256: 6f82b09c77bf0ab72f054533c617248abf2ba01ef5990490ae64d04727e0d023
+      - type: paragraph_open
+        start: 493
+        end: 502
+        sha256: f63af8a8f3a2a9808891e718b80ad2fe1dc164a2c53145f7d4f507be80d257cd
+    - id: python-project.md:504-568
+      start: 503
+      end: 568
+      sha256: 5e2c06fd36965a540e783c19f7694f3454cb76f1deab20e68ca906abc6d8ede5
+      concept: python/documentation-ci-and-releases
+      owner: python/documentation-ci-and-releases
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 503
+        end: 504
+        sha256: 8a1824961ce0a45dcc83ff51a10edefc9946a55090b52a808afef55e3e853df8
+      - type: paragraph_open
+        start: 505
+        end: 507
+        sha256: 7cb1481b23cc1edd6eaed66e05ec06d38a1290d559c82e07e87c04333cb2d307
+      - type: paragraph_open
+        start: 508
+        end: 509
+        sha256: 224ce0a50b3e7f437c84d83c07e8cd92d29bd038d0dc001db1d2a22efdc26f20
+      - type: ordered_list_open
+        start: 510
+        end: 553
+        sha256: 4ce1b5d0ca3706e179ca07cc354ae91b8912acdb769e7044c2677c84de6c1e84
+      - type: paragraph_open
+        start: 553
+        end: 554
+        sha256: 4cfba9dc88269b4deedb8e36f0c3e0e78f01950a6c35bb91beeed676153c9405
+      - type: paragraph_open
+        start: 555
+        end: 563
+        sha256: 6f171103767244fb5547c92a94f04422ae32c0a449cbf75583b50057d1c8c0f6
+      - type: paragraph_open
+        start: 564
+        end: 567
+        sha256: 4f36c4c6d5aabd7efb7cf971f8f0f0eede293d82f874b2f64febed8b620607ad
+    - id: python-project.md:569-584
+      start: 568
+      end: 584
+      sha256: 2d7095b7c8f48d7ed2c44f8632592d7318bc760330861b89687b5e5cc03184cb
+      concept: profiles/python
+      owner: profiles/python
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 568
+        end: 569
+        sha256: e40bd14cc00f26fee7d05629fd04c5f912b3037c50368066a2b8e202a7b90a23
+      - type: bullet_list_open
+        start: 570
+        end: 584
+        sha256: a5fe3a057210d2fb75b84d899bf6ac19149c7f131ebef097d1c204f366bd95d7
+  python-project-community.md:
+    sha256: 4e0cd3d8f6cc892604270a9a72248f468d46790878a8078420014a086e8b9057
+    headings:
+    - title: Python Project Community Extension
+      slug: python-project-community-extension
+      level: 1
+      line: 0
+      destination_slug: python-project-community-extension
+    - title: 1. Additions to the baseline
+      slug: 1-additions-to-the-baseline
+      level: 2
+      line: 18
+      destination_slug: 1-additions-to-the-baseline
+    - title: 2. Governance and contributions
+      slug: 2-governance-and-contributions
+      level: 2
+      line: 40
+      destination_slug: 2-governance-and-contributions
+    - title: 3. Support and compatibility
+      slug: 3-support-and-compatibility
+      level: 2
+      line: 64
+      destination_slug: 3-support-and-compatibility
+    - title: 4. Distributions for downstream packagers
+      slug: 4-distributions-for-downstream-packagers
+      level: 2
+      line: 101
+      destination_slug: 4-distributions-for-downstream-packagers
+    - title: 5. Releases, access, and continuity
+      slug: 5-releases-access-and-continuity
+      level: 2
+      line: 123
+      destination_slug: 5-releases-access-and-continuity
+    - title: 6. Documentation and repository review
+      slug: 6-documentation-and-repository-review
+      level: 2
+      line: 173
+      destination_slug: 6-documentation-and-repository-review
+    - title: 7. Scientific Python ecosystem commitments
+      slug: 7-scientific-python-ecosystem-commitments
+      level: 2
+      line: 194
+      destination_slug: 7-scientific-python-ecosystem-commitments
+    - title: 8. Additional acceptance checklist
+      slug: 8-additional-acceptance-checklist
+      level: 2
+      line: 215
+      destination_slug: 8-additional-acceptance-checklist
+    units:
+    - id: python-project-community.md:1-18
+      start: 0
+      end: 18
+      sha256: c4935d89042ea9979c96549a84845c3cd860e1237c03d49c9471cf58d555b3ae
+      concept: profiles/python-community
+      owner: profiles/python-community
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 0
+        end: 1
+        sha256: b49f9e0c4f33daf2eb4d3a43b75fff4311d9f5a940b87596287fa32da8df981c
+      - type: paragraph_open
+        start: 2
+        end: 7
+        sha256: 5cd7dd66fdb87816f0b903602369fd66e2d30177d7399bd40e0560b121c2e9f7
+      - type: paragraph_open
+        start: 8
+        end: 17
+        sha256: 9d616603c0c19b27a189bad04583abc73d3e13b4a7b77a632ee7e5bc360f6bba
+    - id: python-project-community.md:19-40
+      start: 18
+      end: 40
+      sha256: 3d3a27bf715d2806f75064d6307419763f018464dbfa1c423dcf9ed2dc464435
+      concept: profiles/python-community
+      owner: profiles/python-community
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 18
+        end: 19
+        sha256: 927104873a4831462c471f865b0cf73af71cbcae08770723f55f210b38340609
+      - type: paragraph_open
+        start: 20
+        end: 23
+        sha256: 30ba91e569873e335709ef599cc4cbc4224f4a42492ec3a17c054fdd6bf415ec
+      - type: table_open
+        start: 24
+        end: 33
+        sha256: 44d6bfb2db0dfd1d66ebe51c72031da46a2e5ee8a8f5001c87beafad28c5f3bc
+      - type: paragraph_open
+        start: 34
+        end: 39
+        sha256: 315a5f4a2c07d19f5606925f25b65aeba16ffd2ef7fa00e88c75ffa15c9734e1
+    - id: python-project-community.md:41-64
+      start: 40
+      end: 64
+      sha256: ed014a16db3ef92cf273d9ad5c78ad6db3a74c677a46a2026a7193b45de793b3
+      concept: community/governance
+      owner: community/governance
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 40
+        end: 41
+        sha256: 9f391dfb959220c1e4dad3ef0a3c937d76fead4518e811687ed7fd17d1b7a389
+      - type: paragraph_open
+        start: 42
+        end: 47
+        sha256: d1ddf7b1bdedbb89e1715728c72e20a08308ba2fb1f70fe8d8e7c4878a74b639
+      - type: paragraph_open
+        start: 48
+        end: 53
+        sha256: 3cb812d453690c9cd3c15d9a92f4abfca2be6efbe46afc02d5c2ac7664a36600
+      - type: paragraph_open
+        start: 54
+        end: 63
+        sha256: c6f7424ad9df56b78f92946331733a646271b476ff07e18cf1b379c20c631e9a
+    - id: python-project-community.md:65-101
+      start: 64
+      end: 101
+      sha256: 3f27dff7f90eefb1d9a058fad2ca056a1a8fbc61a0cc5b2b006b4f4edfebc0fc
+      concept: community/compatibility-and-downstreams
+      owner: community/compatibility-and-downstreams
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 64
+        end: 65
+        sha256: afb4a63d8b58e7979864fa5326cdf6818ae5b7dffb5a0750a05430e7fca3586a
+      - type: paragraph_open
+        start: 66
+        end: 75
+        sha256: 3ae1839af617d8c3b875d3542f56d4506b2ad3b7032aa8cc0c6808480f93f9d6
+      - type: paragraph_open
+        start: 76
+        end: 80
+        sha256: 4e686a052ada71b3f20ef785214eafbda1c4ea2e0991379980bd152f994707d0
+      - type: paragraph_open
+        start: 81
+        end: 92
+        sha256: 50bdb858aeffeb5fb0ff8e50e27bf37a1c1427c8640da5e7c7a78bf407b11606
+      - type: paragraph_open
+        start: 93
+        end: 100
+        sha256: 42b77f6877783d8ae2ac5d8e1b535eb2ca606d4869c9d50646eedda201e1caab
+    - id: python-project-community.md:102-123
+      start: 101
+      end: 123
+      sha256: 9f69d8a913b18607eeb60e2f3372d2997ee2247b75875738322ce10409dd4332
+      concept: community/compatibility-and-downstreams
+      owner: community/compatibility-and-downstreams
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 101
+        end: 102
+        sha256: f7060539b7ec7db2a1c46322fb6aab6b3ae7b709b6c19b7a0048dfb5ef70570a
+      - type: paragraph_open
+        start: 103
+        end: 110
+        sha256: 3e47999ef26c88c02daa6dfb58686965f0afc6ce41521e58cf94fa070138d72d
+      - type: paragraph_open
+        start: 111
+        end: 122
+        sha256: 5ec2715ac397706381fb7bb599cc6ae715c694c43efc8a67cf27f0bf5f60dd48
+    - id: python-project-community.md:124-173
+      start: 123
+      end: 173
+      sha256: f50a95e1f5248a20095b5adbf0ad85e6bc2f5fb56ea89758e705cc0402fbb914
+      concept: community/releases-and-continuity
+      owner: community/releases-and-continuity
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 123
+        end: 124
+        sha256: 871ec0ef0b662ea83a2ab0c3c8067098a6041d7e48b350a2a7f91be724767d74
+      - type: paragraph_open
+        start: 125
+        end: 130
+        sha256: 65ae35073bc5ab836fc1479f36727e9bd6f1fbe1ddf8b714b7f3517f7e48d9aa
+      - type: paragraph_open
+        start: 131
+        end: 138
+        sha256: 86940e5ccf3add9bcb9873dad8770fffd2a89f7cedc26b1d48c020b73afa54de
+      - type: paragraph_open
+        start: 139
+        end: 149
+        sha256: be90821dda423c676a81a07723393cb236236b7d71cf79f831e904093e5ae6e3
+      - type: paragraph_open
+        start: 150
+        end: 160
+        sha256: 50648399531d44a12bf183652cf6d9f689a1b8bacc291e8e9a5668cbda047b1d
+      - type: paragraph_open
+        start: 161
+        end: 172
+        sha256: 5371617f8747f8dd732e9c25bc3dd12e641fafb0229aecd74e9169c2973d9ac5
+    - id: python-project-community.md:174-194
+      start: 173
+      end: 194
+      sha256: c29c6039d59647f99a3769215835f0549d741be04defb4dd977baea7763a8c63
+      concept: community/governance
+      owner: community/governance
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 173
+        end: 174
+        sha256: eea9f1e032ad0a529dde0dce760198e21c5572342e60426112274850b87ed43f
+      - type: paragraph_open
+        start: 175
+        end: 179
+        sha256: 367109142d7b661f154bf1fc7ebebf4bc6a920aec8437e4304f849875565019b
+      - type: paragraph_open
+        start: 180
+        end: 184
+        sha256: 9fc7b09c1db2a01b94d9f981f46d03f17a41779fe66b99db5ae84a351f0f1d0a
+      - type: paragraph_open
+        start: 185
+        end: 193
+        sha256: ed777c03ba17daebd074bde84f658751acc4f7757151b94f3661eb1c3165bb5f
+    - id: python-project-community.md:195-215
+      start: 194
+      end: 215
+      sha256: a3dbc926f75ad15416bef98ca61d1b54e7821c465968d2f0c5d0adbd1a14f4f3
+      concept: community/scientific-python
+      owner: community/scientific-python
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 194
+        end: 195
+        sha256: d945cd3993757b6922064e1d7ba44193d4dc67b6cf7770e021066e519b712d55
+      - type: paragraph_open
+        start: 196
+        end: 201
+        sha256: d3b8b3abd1c265846971c659788f802189031147a419cd8cf6acf8c664ebc84d
+      - type: table_open
+        start: 202
+        end: 209
+        sha256: c8dd2ca0432a51dde9a19b5eaf9ea13838947594e1607f030a331327dc9dfbb7
+      - type: paragraph_open
+        start: 210
+        end: 214
+        sha256: 83a5ccb03a638cc61560d7b1dce7c0d2d25ebec2c8ccd5ad35aa9a84f005fda7
+    - id: python-project-community.md:216-227
+      start: 215
+      end: 227
+      sha256: 3aae179eda5d0ff1da005e29103200624aa7e0277c8f73f7889964bcd833b93d
+      concept: profiles/python-community
+      owner: profiles/python-community
+      disposition: relocated
+      blocks:
+      - type: heading_open
+        start: 215
+        end: 216
+        sha256: 02403bb7c9762f12dc1dee82e521852af44eb36f6551cc3de5b6f08a6e117a53
+      - type: paragraph_open
+        start: 217
+        end: 218
+        sha256: 5449dce522d40d48e1ca03a5192c9f359e4bc2156fd47fd4e0ea8798914049c8
+      - type: bullet_list_open
+        start: 219
+        end: 227
+        sha256: 0c2c3e0c4d1776bdbefd8c3be7e12ab31d1b8c02a80a507ddfbbf87ddffbf917
+concepts:
+  selection:
+    type: Reference
+    title: Choose a project blueprint
+    preamble: ''
+    units:
+    - README.md:1-4
+    - README.md:5-18
+    - README.md:19-21
+    body_sha256: fc405acb9bc1f8194ff5acef82cc2337d2554aea30b28762b29b67cfd6241431
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256: []
+    citations:
+    - id: original-readme
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/README.md
+      title: Original README.md
+    - id: authority-1
+      resource: https://gist.github.com/davidgibsonp/337be9b80b3f03eccd188235c287bb05
+      title: https://gist.github.com/davidgibsonp/337be9b80b3f03eccd188235c287bb05
+  profiles/harness-agnostic:
+    type: Blueprint
+    title: Harness-agnostic project profile
+    preamble: '## Adoption sequence
+
+
+      - [Shared instructions and repository layout](../foundation/instructions.md).
+
+      - [Portable agent skills](../foundation/skills.md).
+
+      - [Shared MCP configuration](../foundation/mcp-configuration.md).
+
+      - [Harness-specific adapters](../foundation/harness-adapters.md).
+
+      - [Harness automation and ignore rules](../foundation/automation.md).
+
+      - [Migrate an existing repository](../foundation/migration.md).
+
+
+      '
+    units:
+    - harness-agnostic-project.md:1-9
+    - harness-agnostic-project.md:10-23
+    - harness-agnostic-project.md:24-35
+    - harness-agnostic-project.md:36-37
+    - harness-agnostic-project.md:398-410
+    - harness-agnostic-project.md:507-521
+    body_sha256: 08be194e1c036d65f4fbb542dc48e463ec13df1f31c6758279411f5f87ee95e0
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256: []
+    citations:
+    - id: original-harness-agnostic-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/harness-agnostic-project.md
+      title: Original harness-agnostic-project.md
+    - id: authority-1
+      resource: https://www.langchain.com/blog/the-anatomy-of-an-agent-harness
+      title: https://www.langchain.com/blog/the-anatomy-of-an-agent-harness
+    - id: authority-2
+      resource: https://agents.md
+      title: https://agents.md
+    - id: authority-3
+      resource: https://github.com/agentsmd/agents.md
+      title: https://github.com/agentsmd/agents.md
+    - id: authority-4
+      resource: https://aaif.io/
+      title: https://aaif.io/
+    - id: authority-5
+      resource: https://agentskills.io/specification
+      title: https://agentskills.io/specification
+    - id: authority-6
+      resource: https://agentskills.io/client-implementation/adding-skills-support.md
+      title: https://agentskills.io/client-implementation/adding-skills-support.md
+    - id: authority-7
+      resource: https://github.com/agentskills/agentskills
+      title: https://github.com/agentskills/agentskills
+    - id: authority-8
+      resource: https://github.com/vercel-labs/skills
+      title: https://github.com/vercel-labs/skills
+    - id: authority-9
+      resource: https://modelcontextprotocol.io
+      title: https://modelcontextprotocol.io
+    - id: authority-10
+      resource: https://code.claude.com/docs/en/skills
+      title: https://code.claude.com/docs/en/skills
+    - id: authority-11
+      resource: https://github.com/anthropics/claude-code/issues/31005
+      title: https://github.com/anthropics/claude-code/issues/31005
+    - id: authority-12
+      resource: https://learn.chatgpt.com/docs/build-skills
+      title: https://learn.chatgpt.com/docs/build-skills
+    - id: authority-13
+      resource: https://learn.chatgpt.com/docs/config-file/config-basic
+      title: https://learn.chatgpt.com/docs/config-file/config-basic
+    - id: authority-14
+      resource: https://opencode.ai/docs/config/
+      title: https://opencode.ai/docs/config/
+    - id: authority-15
+      resource: https://github.com/can1357/oh-my-pi/tree/main/docs
+      title: https://github.com/can1357/oh-my-pi/tree/main/docs
+    - id: authority-16
+      resource: https://www.ssw.com.au/rules/symlink-agents-to-claude
+      title: https://www.ssw.com.au/rules/symlink-agents-to-claude
+  foundation/instructions:
+    type: Blueprint
+    title: Shared instructions and repository layout
+    preamble: '# Shared instructions and repository layout
+
+
+      Prerequisite: [Harness-agnostic project profile](../profiles/harness-agnostic.md).
+
+
+      '
+    units:
+    - harness-agnostic-project.md:38-64
+    - harness-agnostic-project.md:65-80
+    - harness-agnostic-project.md:348-397
+    body_sha256: 3de1f37a1c0f5fb4c4d54d832d94cc487d3dc2d69492989729ebf04674c8462f
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256:
+    - e415012aea6592f7ba69f67cd8e874b288791df05a6af99f2082be87fa9dd8ee
+    - 336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49
+    - a82019df2ccd4dba70d05400480176854bb94afe0dea2c552df23b2bc6b08ac3
+    citations:
+    - id: original-harness-agnostic-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/harness-agnostic-project.md
+      title: Original harness-agnostic-project.md
+    - id: authority-1
+      resource: https://agents.md
+      title: https://agents.md
+  foundation/skills:
+    type: Blueprint
+    title: Portable agent skills
+    preamble: '# Portable agent skills
+
+
+      Prerequisite: [Harness-agnostic project profile](../profiles/harness-agnostic.md).
+
+
+      '
+    units:
+    - harness-agnostic-project.md:81-221
+    body_sha256: b28049246e65289e3ce2b999d8f844719c2762d7a5a93fdb43872023826653c9
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256:
+    - 6703c3f2d79ff02c440fccf91bcf65189b81fcd6d49426422d030ea4db8673f6
+    - aa089b1fcad3a384a269506530f1c37138a9e0dda27b565797bd3a51cdc57a4f
+    - 3a7dc50f1a5a07f8aa9765fccc3d0603c710d9fca9a6282867209db1abcb4e78
+    citations:
+    - id: original-harness-agnostic-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/harness-agnostic-project.md
+      title: Original harness-agnostic-project.md
+    - id: authority-1
+      resource: https://agentskills.io/specification
+      title: https://agentskills.io/specification
+    - id: authority-2
+      resource: https://github.com/vercel-labs/skills
+      title: https://github.com/vercel-labs/skills
+  foundation/mcp-configuration:
+    type: Blueprint
+    title: Shared MCP configuration
+    preamble: '# Shared MCP configuration
+
+
+      Prerequisite: [Harness-agnostic project profile](../profiles/harness-agnostic.md).
+
+
+      '
+    units:
+    - harness-agnostic-project.md:222-268
+    body_sha256: d09ebfa431cd2eba94967964b91a8c01a69d242cb8e5f2f15912c49b7f0b2af1
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256:
+    - 79c1145a10a16f67cfe9c9bb26d2bb97a18e735079ee144dbdd4c75f019c56a9
+    citations:
+    - id: original-harness-agnostic-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/harness-agnostic-project.md
+      title: Original harness-agnostic-project.md
+  foundation/harness-adapters:
+    type: Blueprint
+    title: Harness-specific adapters
+    preamble: '# Harness-specific adapters
+
+
+      Prerequisite: [Harness-agnostic project profile](../profiles/harness-agnostic.md).
+
+
+      '
+    units:
+    - harness-agnostic-project.md:269-280
+    body_sha256: 94574562d8122a6889fa903ba3ef6edda41d17bd3b4be06332f5157088765798
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256: []
+    citations:
+    - id: original-harness-agnostic-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/harness-agnostic-project.md
+      title: Original harness-agnostic-project.md
+  foundation/automation:
+    type: Blueprint
+    title: Harness automation and ignore rules
+    preamble: '# Harness automation and ignore rules
+
+
+      Prerequisite: [Harness-agnostic project profile](../profiles/harness-agnostic.md).
+
+
+      '
+    units:
+    - harness-agnostic-project.md:281-308
+    - harness-agnostic-project.md:309-347
+    body_sha256: c844daf90207c4e5f04958a227084f5a2080565af6d8bb9bc1eacb218fdc772d
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256:
+    - 7e95cce0afee6de8fec8d65be451e23ecf6f95bd4f2d0a1a260aaeb8e9e78962
+    - 365216de0f90d3a1d5183ed71474a9a420948e492a1dc5867d472c137bceb410
+    - aef34dbe6f5dfa893a82f9d943a3cae0258f33cfd6a97ce89c4a7cbb902e3589
+    citations:
+    - id: original-harness-agnostic-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/harness-agnostic-project.md
+      title: Original harness-agnostic-project.md
+  foundation/migration:
+    type: Playbook
+    title: Migrate an existing repository
+    preamble: '# Migrate an existing repository
+
+
+      Prerequisite: [Harness-agnostic project profile](../profiles/harness-agnostic.md).
+
+
+      '
+    units:
+    - harness-agnostic-project.md:411-412
+    - harness-agnostic-project.md:413-429
+    - harness-agnostic-project.md:430-440
+    - harness-agnostic-project.md:441-459
+    - harness-agnostic-project.md:460-483
+    - harness-agnostic-project.md:484-494
+    - harness-agnostic-project.md:495-506
+    body_sha256: 8f6502f3264e28e93dbcc9198aeb0a6638098d378059c884c434b0c76af49e3d
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256:
+    - 4fd74e02a2c58b64745c85d0ec6b1879b1c1a06d53c389fa2dc4a9cf864ae357
+    - 81ee3aef18a0d54e53bc1302c251c39edc8f8172ed359339451b853589783175
+    - 29fd4bfd75da393f3c1eb5597eb40809fca3153431b4dc069f084175bd23519b
+    citations:
+    - id: original-harness-agnostic-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/harness-agnostic-project.md
+      title: Original harness-agnostic-project.md
+  profiles/python:
+    type: Blueprint
+    title: Python project profile
+    preamble: 'Prerequisite: [Harness-agnostic project profile](harness-agnostic.md).
+
+
+      ## Adoption sequence
+
+
+      - [Python packaging and layout](../python/packaging.md).
+
+      - [Dependencies and compatibility](../python/dependencies-and-compatibility.md).
+
+      - [One executable Python workflow](../python/executable-workflow.md).
+
+      - [Python quality and testing](../python/quality-and-testing.md).
+
+      - [Documentation, CI, and releases](../python/documentation-ci-and-releases.md).
+
+
+      '
+    units:
+    - python-project.md:1-14
+    - python-project.md:15-32
+    - python-project.md:33-66
+    - python-project.md:569-584
+    body_sha256: 3e800142ed674f2bbe11c6c8c25a53a8ccb30bdc9962bf977fd7c2f8aa686bb1
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256: []
+    citations:
+    - id: original-python-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/python-project.md
+      title: Original python-project.md
+  python/packaging:
+    type: Blueprint
+    title: Python packaging and layout
+    preamble: '# Python packaging and layout
+
+
+      Prerequisite: [Python project profile](../profiles/python.md).
+
+
+      '
+    units:
+    - python-project.md:67-125
+    - python-project.md:126-127
+    - python-project.md:128-171
+    body_sha256: 9f97241736a5f54f7e39f5c57b3e3d745a1fd810a6041f796b086d447459b9b4
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256:
+    - 2f4d7e02d780bf6771765c7ddac1b45b0bbfbd83ec05d7203250e1fdf3e7697e
+    - 7f87ea00230ebe67392e3ef363d3a5e2d765c95bbf772845b8daa9eed9d39ef6
+    citations:
+    - id: original-python-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/python-project.md
+      title: Original python-project.md
+    - id: authority-1
+      resource: https://hatch.pypa.io/latest/history/hatchling/#1270-2024-11-26
+      title: https://hatch.pypa.io/latest/history/hatchling/#1270-2024-11-26
+    - id: authority-2
+      resource: https://hatch.pypa.io/latest/config/build/#file-selection
+      title: https://hatch.pypa.io/latest/config/build/#file-selection
+    - id: authority-3
+      resource: https://hatch.pypa.io/latest/plugins/builder/sdist/#default-file-selection
+      title: https://hatch.pypa.io/latest/plugins/builder/sdist/#default-file-selection
+  python/dependencies-and-compatibility:
+    type: Blueprint
+    title: Dependencies and compatibility
+    preamble: '# Dependencies and compatibility
+
+
+      Prerequisite: [Python project profile](../profiles/python.md).
+
+
+      '
+    units:
+    - python-project.md:172-218
+    body_sha256: ccc6abd5fa555f4b97321716826c17c66d405f0163294ca7dda53ccbd9768e37
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256: []
+    citations:
+    - id: original-python-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/python-project.md
+      title: Original python-project.md
+    - id: authority-1
+      resource: https://docs.astral.sh/uv/concepts/projects/sync/
+      title: https://docs.astral.sh/uv/concepts/projects/sync/
+    - id: authority-2
+      resource: https://docs.astral.sh/uv/concepts/resolution/#resolution-strategy
+      title: https://docs.astral.sh/uv/concepts/resolution/#resolution-strategy
+  python/executable-workflow:
+    type: Blueprint
+    title: One executable Python workflow
+    preamble: '# One executable Python workflow
+
+
+      Prerequisite: [Python project profile](../profiles/python.md).
+
+
+      '
+    units:
+    - python-project.md:219-297
+    body_sha256: c0cefe07b83c6f3fd2eee53aca66c46c35ff41855f14e8503018c789b348b1c8
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256:
+    - 8b28e4e17b22855ea67a6bfbcc0d4821877cd87d7d1400a09edccce2da0b0ff1
+    citations:
+    - id: original-python-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/python-project.md
+      title: Original python-project.md
+  python/quality-and-testing:
+    type: Blueprint
+    title: Python quality and testing
+    preamble: '# Python quality and testing
+
+
+      Prerequisite: [Python project profile](../profiles/python.md).
+
+
+      '
+    units:
+    - python-project.md:298-299
+    - python-project.md:300-334
+    - python-project.md:335-376
+    - python-project.md:377-425
+    body_sha256: cb93a1d3c08bd46ead2bef919eff0ffc09b9fee8f8a1d178351a5d807ffb4d8e
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256:
+    - 228d99945b893022d0149d795c114a3b662d0c039f8a8ae192be8f7805356186
+    citations:
+    - id: original-python-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/python-project.md
+      title: Original python-project.md
+    - id: authority-1
+      resource: https://github.com/KyleKing/mdformat-mkdocs
+      title: https://github.com/KyleKing/mdformat-mkdocs
+    - id: authority-2
+      resource: https://learn.scientific-python.org/development/guides/style/
+      title: https://learn.scientific-python.org/development/guides/style/
+    - id: authority-3
+      resource: https://github.com/RobertCraigie/pyright-python
+      title: https://github.com/RobertCraigie/pyright-python
+    - id: authority-4
+      resource: https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+      title: https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+    - id: authority-5
+      resource: https://learn.scientific-python.org/development/guides/pytest/
+      title: https://learn.scientific-python.org/development/guides/pytest/
+    - id: authority-6
+      resource: https://coverage.readthedocs.io/en/latest/config.html#run-relative-files
+      title: https://coverage.readthedocs.io/en/latest/config.html#run-relative-files
+  python/documentation-ci-and-releases:
+    type: Blueprint
+    title: Documentation, CI, and releases
+    preamble: '# Documentation, CI, and releases
+
+
+      Prerequisite: [Python project profile](../profiles/python.md).
+
+
+      '
+    units:
+    - python-project.md:426-427
+    - python-project.md:428-459
+    - python-project.md:460-503
+    - python-project.md:504-568
+    body_sha256: bb137f00d87b6de6143c7c193c7209ecbb68570936ced3d9dfbb82b0fffb2f03
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256: []
+    citations:
+    - id: original-python-project
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/python-project.md
+      title: Original python-project.md
+    - id: authority-1
+      resource: https://diataxis.fr/
+      title: https://diataxis.fr/
+    - id: authority-2
+      resource: https://learn.scientific-python.org/development/guides/docs/
+      title: https://learn.scientific-python.org/development/guides/docs/
+    - id: authority-3
+      resource: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets
+      title: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets
+    - id: authority-4
+      resource: https://learn.scientific-python.org/development/guides/security/
+      title: https://learn.scientific-python.org/development/guides/security/
+    - id: authority-5
+      resource: https://docs.astral.sh/uv/concepts/projects/build/
+      title: https://docs.astral.sh/uv/concepts/projects/build/
+    - id: authority-6
+      resource: https://docs.astral.sh/uv/reference/cli/#uv-build
+      title: https://docs.astral.sh/uv/reference/cli/#uv-build
+    - id: authority-7
+      resource: https://twine.readthedocs.io/en/stable/changelog.html#twine-6-1-0-2025-01-17
+      title: https://twine.readthedocs.io/en/stable/changelog.html#twine-6-1-0-2025-01-17
+    - id: authority-8
+      resource: https://docs.pypi.org/trusted-publishers/adding-a-publisher/
+      title: https://docs.pypi.org/trusted-publishers/adding-a-publisher/
+    - id: authority-9
+      resource: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
+      title: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
+  profiles/python-community:
+    type: Blueprint
+    title: Python community profile
+    preamble: 'Prerequisite: [Python project profile](python.md).
+
+
+      ## Adoption sequence
+
+
+      - [Community governance and documentation](../community/governance.md).
+
+      - [Community compatibility and downstreams](../community/compatibility-and-downstreams.md).
+
+      - [Community releases and continuity](../community/releases-and-continuity.md).
+
+      - [Scientific Python commitments](../community/scientific-python.md).
+
+
+      '
+    units:
+    - python-project-community.md:1-18
+    - python-project-community.md:19-40
+    - python-project-community.md:216-227
+    body_sha256: 676c3ebaa8c1d5ce148d1c9127f681d2a6e54019e104431b40ab55fb250a777d
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256: []
+    citations:
+    - id: original-python-project-community
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/python-project-community.md
+      title: Original python-project-community.md
+  community/governance:
+    type: Blueprint
+    title: Community governance and documentation
+    preamble: '# Community governance and documentation
+
+
+      Prerequisite: [Python community profile](../profiles/python-community.md).
+
+
+      '
+    units:
+    - python-project-community.md:41-64
+    - python-project-community.md:174-194
+    body_sha256: 63b66b25ae3d0c2d5f09cf40a76bac137a4ed8c1cd9fa11e17e80ab95765b0da
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256: []
+    citations:
+    - id: original-python-project-community
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/python-project-community.md
+      title: Original python-project-community.md
+    - id: authority-1
+      resource: https://repo-review.readthedocs.io/en/latest/
+      title: https://repo-review.readthedocs.io/en/latest/
+  community/compatibility-and-downstreams:
+    type: Blueprint
+    title: Community compatibility and downstreams
+    preamble: '# Community compatibility and downstreams
+
+
+      Prerequisite: [Python community profile](../profiles/python-community.md).
+
+
+      '
+    units:
+    - python-project-community.md:65-101
+    - python-project-community.md:102-123
+    body_sha256: 8e074ec0be70e9176b5bd04a7d1d47f900bf66b43d56fb8b1f5150bbfa4aada1
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256: []
+    citations:
+    - id: original-python-project-community
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/python-project-community.md
+      title: Original python-project-community.md
+  community/releases-and-continuity:
+    type: Blueprint
+    title: Community releases and continuity
+    preamble: '# Community releases and continuity
+
+
+      Prerequisite: [Python community profile](../profiles/python-community.md).
+
+
+      '
+    units:
+    - python-project-community.md:124-173
+    body_sha256: e745ce61cf227893e27d75a34bbaf2a2d394824ddae6699dc034d196856ed670
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256: []
+    citations:
+    - id: original-python-project-community
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/python-project-community.md
+      title: Original python-project-community.md
+    - id: authority-1
+      resource: https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments
+      title: https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments
+    - id: authority-2
+      resource: https://scientific-python.org/specs/spec-0008/
+      title: https://scientific-python.org/specs/spec-0008/
+    - id: authority-3
+      resource: https://scientific-python.org/specs/spec-0006/
+      title: https://scientific-python.org/specs/spec-0006/
+  community/scientific-python:
+    type: Blueprint
+    title: Scientific Python commitments
+    preamble: '# Scientific Python commitments
+
+
+      Prerequisite: [Python community profile](../profiles/python-community.md).
+
+
+      '
+    units:
+    - python-project-community.md:195-215
+    body_sha256: 3f03228be0b1946a29c14637251946e30d551ae3e0abba87fd806401ff0cc8b3
+    transforms:
+    - relative-concept-links
+    - source-footnotes
+    - mdformat-prose
+    fences_sha256: []
+    citations:
+    - id: original-python-project-community
+      resource: https://github.com/grAItools/project-blueprints/blob/b90867e82cd2a06ec3a01bea8d86d4f9a2882048/python-project-community.md
+      title: Original python-project-community.md
+    - id: authority-1
+      resource: https://learn.scientific-python.org/development/
+      title: https://learn.scientific-python.org/development/
+    - id: authority-2
+      resource: https://scientific-python.org/specs/
+      title: https://scientific-python.org/specs/
+    - id: authority-3
+      resource: https://scientific-python.org/specs/spec-0000/
+      title: https://scientific-python.org/specs/spec-0000/
+    - id: authority-4
+      resource: https://scientific-python.org/specs/spec-0004/
+      title: https://scientific-python.org/specs/spec-0004/
+    - id: authority-5
+      resource: https://scientific-python.org/specs/spec-0006/
+      title: https://scientific-python.org/specs/spec-0006/
+    - id: authority-6
+      resource: https://scientific-python.org/specs/spec-0008/
+      title: https://scientific-python.org/specs/spec-0008/
+    - id: authority-7
+      resource: https://scientific-python.org/specs/spec-0005/
+      title: https://scientific-python.org/specs/spec-0005/
+    - id: authority-8
+      resource: https://scientific-python.org/specs/spec-0009/
+      title: https://scientific-python.org/specs/spec-0009/

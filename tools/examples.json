@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "examples": [
+    {
+      "concept": "foundation/automation",
+      "fence": 0,
+      "language": "yaml",
+      "check": "yaml",
+      "sha256": "7e95cce0afee6de8fec8d65be451e23ecf6f95bd4f2d0a1a260aaeb8e9e78962",
+      "reason": "Syntax-check complete configuration; shell examples are inspected, never executed."
+    },
+    {
+      "concept": "foundation/automation",
+      "fence": 1,
+      "language": "gitignore",
+      "check": "illustrative",
+      "sha256": "365216de0f90d3a1d5183ed71474a9a420948e492a1dc5867d472c137bceb410",
+      "reason": "Illustrative layout, template, or fragment; not a runnable artifact."
+    },
+    {
+      "concept": "foundation/automation",
+      "fence": 2,
+      "language": "gitignore",
+      "check": "illustrative",
+      "sha256": "aef34dbe6f5dfa893a82f9d943a3cae0258f33cfd6a97ce89c4a7cbb902e3589",
+      "reason": "Illustrative layout, template, or fragment; not a runnable artifact."
+    },
+    {
+      "concept": "foundation/instructions",
+      "fence": 0,
+      "language": "",
+      "check": "illustrative",
+      "sha256": "e415012aea6592f7ba69f67cd8e874b288791df05a6af99f2082be87fa9dd8ee",
+      "reason": "Illustrative layout, template, or fragment; not a runnable artifact."
+    },
+    {
+      "concept": "foundation/instructions",
+      "fence": 1,
+      "language": "markdown",
+      "check": "illustrative",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "reason": "Illustrative layout, template, or fragment; not a runnable artifact."
+    },
+    {
+      "concept": "foundation/instructions",
+      "fence": 2,
+      "language": "markdown",
+      "check": "illustrative",
+      "sha256": "a82019df2ccd4dba70d05400480176854bb94afe0dea2c552df23b2bc6b08ac3",
+      "reason": "Illustrative layout, template, or fragment; not a runnable artifact."
+    },
+    {
+      "concept": "foundation/mcp-configuration",
+      "fence": 0,
+      "language": "json",
+      "check": "json",
+      "sha256": "79c1145a10a16f67cfe9c9bb26d2bb97a18e735079ee144dbdd4c75f019c56a9",
+      "reason": "Syntax-check complete configuration; shell examples are inspected, never executed."
+    },
+    {
+      "concept": "foundation/migration",
+      "fence": 0,
+      "language": "bash",
+      "check": "bash-syntax",
+      "sha256": "4fd74e02a2c58b64745c85d0ec6b1879b1c1a06d53c389fa2dc4a9cf864ae357",
+      "reason": "Syntax-check complete configuration; shell examples are inspected, never executed."
+    },
+    {
+      "concept": "foundation/migration",
+      "fence": 1,
+      "language": "markdown",
+      "check": "illustrative",
+      "sha256": "81ee3aef18a0d54e53bc1302c251c39edc8f8172ed359339451b853589783175",
+      "reason": "Illustrative layout, template, or fragment; not a runnable artifact."
+    },
+    {
+      "concept": "foundation/migration",
+      "fence": 2,
+      "language": "",
+      "check": "illustrative",
+      "sha256": "29fd4bfd75da393f3c1eb5597eb40809fca3153431b4dc069f084175bd23519b",
+      "reason": "Illustrative layout, template, or fragment; not a runnable artifact."
+    },
+    {
+      "concept": "foundation/skills",
+      "fence": 0,
+      "language": "yaml",
+      "check": "illustrative",
+      "sha256": "6703c3f2d79ff02c440fccf91bcf65189b81fcd6d49426422d030ea4db8673f6",
+      "reason": "Illustrative layout, template, or fragment; not a runnable artifact."
+    },
+    {
+      "concept": "foundation/skills",
+      "fence": 1,
+      "language": "bash",
+      "check": "bash-syntax",
+      "sha256": "aa089b1fcad3a384a269506530f1c37138a9e0dda27b565797bd3a51cdc57a4f",
+      "reason": "Syntax-check complete configuration; shell examples are inspected, never executed."
+    },
+    {
+      "concept": "foundation/skills",
+      "fence": 2,
+      "language": "bash",
+      "check": "illustrative",
+      "sha256": "3a7dc50f1a5a07f8aa9765fccc3d0603c710d9fca9a6282867209db1abcb4e78",
+      "reason": "Contains <repo>/<skill-name> placeholders; substitute values before running."
+    },
+    {
+      "concept": "python/executable-workflow",
+      "fence": 0,
+      "language": "bash",
+      "check": "bash-syntax",
+      "sha256": "8b28e4e17b22855ea67a6bfbcc0d4821877cd87d7d1400a09edccce2da0b0ff1",
+      "reason": "Syntax-check complete configuration; shell examples are inspected, never executed."
+    },
+    {
+      "concept": "python/packaging",
+      "fence": 0,
+      "language": "text",
+      "check": "illustrative",
+      "sha256": "2f4d7e02d780bf6771765c7ddac1b45b0bbfbd83ec05d7203250e1fdf3e7697e",
+      "reason": "Illustrative layout, template, or fragment; not a runnable artifact."
+    },
+    {
+      "concept": "python/packaging",
+      "fence": 1,
+      "language": "toml",
+      "check": "toml",
+      "sha256": "7f87ea00230ebe67392e3ef363d3a5e2d765c95bbf772845b8daa9eed9d39ef6",
+      "reason": "Syntax-check complete configuration; shell examples are inspected, never executed."
+    },
+    {
+      "concept": "python/quality-and-testing",
+      "fence": 0,
+      "language": "toml",
+      "check": "toml",
+      "sha256": "228d99945b893022d0149d795c114a3b662d0c039f8a8ae192be8f7805356186",
+      "reason": "Syntax-check complete configuration; shell examples are inspected, never executed."
+    }
+  ]
+}

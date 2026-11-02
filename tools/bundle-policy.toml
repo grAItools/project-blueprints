@@ -1,0 +1,38 @@
+# The spec pin and tool versions are in versions.json.
+types = ["Blueprint", "Playbook", "Reference"]
+tags = ["selection", "profiles", "foundation", "python", "community", "tool-behavior", "policy"]
+# No human identity or verification has been inferred from Git configuration.
+maintainers = []
+
+[directories]
+"." = "Project blueprints"
+profiles = "Adoption profiles"
+foundation = "Harness foundation"
+python = "Python baseline"
+community = "Community extension"
+
+[profile_requires]
+"profiles/harness-agnostic" = []
+"profiles/python" = ["profiles/harness-agnostic"]
+"profiles/python-community" = ["profiles/python"]
+
+[freshness]
+"selection" = "policy"
+"profiles/harness-agnostic" = "policy"
+"profiles/python" = "tool-behavior"
+"profiles/python-community" = "policy"
+"foundation/instructions" = "tool-behavior"
+"foundation/skills" = "tool-behavior"
+"foundation/mcp-configuration" = "tool-behavior"
+"foundation/harness-adapters" = "tool-behavior"
+"foundation/automation" = "tool-behavior"
+"foundation/migration" = "tool-behavior"
+"python/packaging" = "tool-behavior"
+"python/dependencies-and-compatibility" = "tool-behavior"
+"python/executable-workflow" = "tool-behavior"
+"python/quality-and-testing" = "tool-behavior"
+"python/documentation-ci-and-releases" = "tool-behavior"
+"community/governance" = "policy"
+"community/compatibility-and-downstreams" = "tool-behavior"
+"community/releases-and-continuity" = "policy"
+"community/scientific-python" = "tool-behavior"

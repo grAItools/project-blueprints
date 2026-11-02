@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "tool_version": "0.5.1",
+      "fixture": "upstream/acme_retail",
+      "rule": "okf/lifecycle/stale-after-invalid",
+      "concepts": [
+        "computations/gross-margin-period",
+        "computations/revenue-ytd",
+        "metrics/gross-margin",
+        "metrics/revenue",
+        "policies/margin-standard",
+        "policies/revenue-recognition",
+        "tables/orders"
+      ],
+      "reason": "v0.5.1 incorrectly requires date-only values; preserve the spec-correct timezone-aware datetime.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "upstream/acme_retail",
+      "rule": "okf/sources/footnote-unreferenced",
+      "concepts": [
+        "computations/gross-margin-period",
+        "metrics/gross-margin"
+      ],
+      "reason": "Recorded upstream fixture finding; preserve upstream bytes and use the local validator for this repository.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "upstream/stackoverflow",
+      "rule": "okf/sources/footnote-unmatched",
+      "concepts": [
+        "references/content_licenses",
+        "references/joins/comments__posts",
+        "references/joins/post_links__posts",
+        "references/joins/posts__votes",
+        "references/joins/posts_answers__posts_questions",
+        "references/metrics/accepted_answer_rate",
+        "references/metrics/bad_question_flag_ratio",
+        "references/post_types",
+        "references/vote_types",
+        "tables/posts_questions",
+        "tables/votes"
+      ],
+      "reason": "Recorded upstream fixture finding; preserve upstream bytes and use the local validator for this repository.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "upstream/stackoverflow",
+      "rule": "okf/sources/footnote-unreferenced",
+      "concepts": [
+        "references/content_licenses",
+        "references/joins/comments__posts",
+        "references/joins/post_links__posts",
+        "references/joins/posts__votes",
+        "references/joins/posts_answers__posts_questions",
+        "references/metrics/accepted_answer_rate",
+        "references/metrics/bad_question_flag_ratio",
+        "references/post_types",
+        "references/vote_types"
+      ],
+      "reason": "Recorded upstream fixture finding; preserve upstream bytes and use the local validator for this repository.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/broken-link",
+      "rule": "okf/frontmatter/description-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/broken-link",
+      "rule": "okf/frontmatter/tags-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/broken-link",
+      "rule": "okf/frontmatter/title-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/broken-link",
+      "rule": "okf/links/broken",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/date-only",
+      "rule": "okf/frontmatter/description-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/date-only",
+      "rule": "okf/frontmatter/tags-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/date-only",
+      "rule": "okf/frontmatter/title-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/datetime",
+      "rule": "okf/frontmatter/description-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/datetime",
+      "rule": "okf/frontmatter/tags-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/datetime",
+      "rule": "okf/lifecycle/stale-after-invalid",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "v0.5.1 incorrectly requires date-only values; preserve the spec-correct timezone-aware datetime.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/invalid-index",
+      "rule": "okf/frontmatter/description-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/invalid-index",
+      "rule": "okf/frontmatter/tags-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/invalid-index",
+      "rule": "okf/frontmatter/title-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/invalid-index",
+      "rule": "okf/reserved/index-frontmatter-key",
+      "concepts": [
+        "index"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/unknown-fields",
+      "rule": "okf/frontmatter/description-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/unknown-fields",
+      "rule": "okf/frontmatter/tags-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    },
+    {
+      "tool_version": "0.5.1",
+      "fixture": "minimal/unknown-fields",
+      "rule": "okf/frontmatter/title-recommended",
+      "concepts": [
+        "concept"
+      ],
+      "reason": "Deliberately exercises validation and warning behavior; expected finding in a negative fixture.",
+      "owner": "project-blueprints maintainers",
+      "expires": "2027-01-31T00:00:00Z"
+    }
+  ]
+}

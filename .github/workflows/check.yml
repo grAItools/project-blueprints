@@ -1,0 +1,19 @@
+name: Bundle checks
+on:
+  pull_request:
+  push:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Bootstrap pinned tools
+        run: python3 scripts/bootstrap.py uv shellcheck
+      - name: Install locked environment
+        run: .tools/bin/uv sync --locked --python 3.12
+      - name: Offline completion gate
+        run: .tools/bin/uv run --locked --offline python scripts/check.py check

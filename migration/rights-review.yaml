@@ -1,0 +1,25 @@
+schema_version: 1
+status: unresolved
+license: MIT
+maintainer_approval: null
+sources:
+- id: repository-originals
+  scope:
+  - knowledge/**
+  - migration/sources/**
+  status: cleared
+  license: MIT
+  required_notices: []
+  evidence: Repository user authorized MIT for project-owned content and tooling. The grant excludes
+    third-party material as described in LICENSING.md; overlapping source scopes do not clear
+    the unresolved harness-integration-reference record. Distribution approval remains pending.
+- id: harness-integration-reference
+  resource: https://gist.github.com/davidgibsonp/337be9b80b3f03eccd188235c287bb05
+  scope:
+  - knowledge/profiles/harness-agnostic.md
+  - knowledge/foundation/**
+  - migration/sources/harness-agnostic-project.md
+  status: unresolved
+  required_notices: []
+  evidence: Credited in original README; permission or applicable license has not been established.
+archive_notices: []

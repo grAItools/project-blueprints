@@ -1,0 +1,40 @@
+[project]
+name = "project-blueprints-tooling"
+version = "0.1.0"
+description = "Local validation for the project-blueprints OKF bundle"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+  "pyyaml>=6.0.3",
+  "markdown-it-py>=4.0",
+  "mdit-py-plugins>=0.5",
+  "mdformat>=0.7.22",
+  "mdformat-gfm>=0.4",
+  "mdformat-front-matters>=2.0",
+  "codespell>=2.4",
+  "pytest>=8.4",
+  "ruff>=0.14",
+  "github-slugger>=0.0.3",
+  "bleach>=6.2",
+  "mdformat-footnote>=0.1.3",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["scripts"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["tests/fixtures", "migration/sources"]
+force-exclude = true
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.codespell]
+ignore-words-list = "stdio,unstaged,nd,te"

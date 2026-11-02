@@ -1,0 +1,325 @@
+{
+  "tool_version": "0.5.1",
+  "upstream_commit": "0b87c52c6ef999286c745e19998fdfcd03d5dbee",
+  "cases": {
+    "upstream/acme_retail": {
+      "exit_code": 1,
+      "findings": [
+        {
+          "concept": "computations/gross-margin-period",
+          "rule": "okf/lifecycle/stale-after-invalid",
+          "severity": "ERROR",
+          "count": 1
+        },
+        {
+          "concept": "computations/gross-margin-period",
+          "rule": "okf/sources/footnote-unreferenced",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "computations/revenue-ytd",
+          "rule": "okf/lifecycle/stale-after-invalid",
+          "severity": "ERROR",
+          "count": 1
+        },
+        {
+          "concept": "metrics/gross-margin",
+          "rule": "okf/lifecycle/stale-after-invalid",
+          "severity": "ERROR",
+          "count": 1
+        },
+        {
+          "concept": "metrics/gross-margin",
+          "rule": "okf/sources/footnote-unreferenced",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "metrics/revenue",
+          "rule": "okf/lifecycle/stale-after-invalid",
+          "severity": "ERROR",
+          "count": 1
+        },
+        {
+          "concept": "policies/margin-standard",
+          "rule": "okf/lifecycle/stale-after-invalid",
+          "severity": "ERROR",
+          "count": 1
+        },
+        {
+          "concept": "policies/revenue-recognition",
+          "rule": "okf/lifecycle/stale-after-invalid",
+          "severity": "ERROR",
+          "count": 1
+        },
+        {
+          "concept": "tables/orders",
+          "rule": "okf/lifecycle/stale-after-invalid",
+          "severity": "ERROR",
+          "count": 1
+        }
+      ]
+    },
+    "upstream/crypto_bitcoin": {
+      "exit_code": 0,
+      "findings": []
+    },
+    "upstream/ga4": {
+      "exit_code": 0,
+      "findings": []
+    },
+    "upstream/stackoverflow": {
+      "exit_code": 0,
+      "findings": [
+        {
+          "concept": "references/content_licenses",
+          "rule": "okf/sources/footnote-unmatched",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/content_licenses",
+          "rule": "okf/sources/footnote-unreferenced",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/joins/comments__posts",
+          "rule": "okf/sources/footnote-unmatched",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/joins/comments__posts",
+          "rule": "okf/sources/footnote-unreferenced",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/joins/post_links__posts",
+          "rule": "okf/sources/footnote-unmatched",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/joins/post_links__posts",
+          "rule": "okf/sources/footnote-unreferenced",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/joins/posts__votes",
+          "rule": "okf/sources/footnote-unmatched",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/joins/posts__votes",
+          "rule": "okf/sources/footnote-unreferenced",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/joins/posts_answers__posts_questions",
+          "rule": "okf/sources/footnote-unmatched",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/joins/posts_answers__posts_questions",
+          "rule": "okf/sources/footnote-unreferenced",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/metrics/accepted_answer_rate",
+          "rule": "okf/sources/footnote-unmatched",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/metrics/accepted_answer_rate",
+          "rule": "okf/sources/footnote-unreferenced",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/metrics/bad_question_flag_ratio",
+          "rule": "okf/sources/footnote-unmatched",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/metrics/bad_question_flag_ratio",
+          "rule": "okf/sources/footnote-unreferenced",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/post_types",
+          "rule": "okf/sources/footnote-unmatched",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/post_types",
+          "rule": "okf/sources/footnote-unreferenced",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/vote_types",
+          "rule": "okf/sources/footnote-unmatched",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "references/vote_types",
+          "rule": "okf/sources/footnote-unreferenced",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "tables/posts_questions",
+          "rule": "okf/sources/footnote-unmatched",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "tables/votes",
+          "rule": "okf/sources/footnote-unmatched",
+          "severity": "WARN",
+          "count": 1
+        }
+      ]
+    },
+    "minimal/broken-link": {
+      "exit_code": 0,
+      "findings": [
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/description-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/tags-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/title-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "concept",
+          "rule": "okf/links/broken",
+          "severity": "WARN",
+          "count": 1
+        }
+      ]
+    },
+    "minimal/date-only": {
+      "exit_code": 0,
+      "findings": [
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/description-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/tags-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/title-recommended",
+          "severity": "WARN",
+          "count": 1
+        }
+      ]
+    },
+    "minimal/datetime": {
+      "exit_code": 1,
+      "findings": [
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/description-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/tags-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "concept",
+          "rule": "okf/lifecycle/stale-after-invalid",
+          "severity": "ERROR",
+          "count": 1
+        }
+      ]
+    },
+    "minimal/invalid-index": {
+      "exit_code": 0,
+      "findings": [
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/description-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/tags-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/title-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "index",
+          "rule": "okf/reserved/index-frontmatter-key",
+          "severity": "WARN",
+          "count": 1
+        }
+      ]
+    },
+    "minimal/unknown-fields": {
+      "exit_code": 0,
+      "findings": [
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/description-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/tags-recommended",
+          "severity": "WARN",
+          "count": 1
+        },
+        {
+          "concept": "concept",
+          "rule": "okf/frontmatter/title-recommended",
+          "severity": "WARN",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

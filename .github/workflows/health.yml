@@ -1,0 +1,28 @@
+name: Bundle health
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 1"
+permissions:
+  contents: read
+jobs:
+  health:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Bootstrap pinned tools
+        run: python3 scripts/bootstrap.py uv lychee okf
+      - name: Install locked environment
+        run: .tools/bin/uv sync --locked --python 3.12
+      - name: Report advisory health
+        run: .tools/bin/uv run --locked python scripts/check.py health
+      - name: Upload health report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: bundle-health
+          path: reports/health.json
+          if-no-files-found: error
+          retention-days: 30

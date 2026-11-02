@@ -1,0 +1,57 @@
+[
+  {
+    "task": "Start a harness-agnostic repository",
+    "expected": {
+      "profiles/harness-agnostic": [
+        "The Core Principle",
+        "A.9 New Project Repository Checklist"
+      ],
+      "foundation/instructions": [
+        "AGENTS.md"
+      ],
+      "foundation/skills": [
+        "sync-skills.sh"
+      ],
+      "foundation/mcp-configuration": [
+        "servers.json"
+      ]
+    }
+  },
+  {
+    "task": "Identify the Python baseline stack and gates",
+    "expected": {
+      "profiles/python": [
+        "mypy",
+        "Pyright",
+        "Zuban",
+        "Pyrefly",
+        "95%"
+      ],
+      "python/executable-workflow": [
+        "scripts/check.py",
+        "--locked"
+      ],
+      "python/quality-and-testing": [
+        "coverage"
+      ]
+    }
+  },
+  {
+    "task": "Identify community additions and prerequisites",
+    "expected": {
+      "profiles/python-community": [
+        "Python Project Repository Blueprint",
+        "Additional acceptance checklist"
+      ],
+      "community/governance": [
+        "independent review"
+      ],
+      "community/releases-and-continuity": [
+        "at least one other release maintainer"
+      ],
+      "community/compatibility-and-downstreams": [
+        "downstream"
+      ]
+    }
+  }
+]
