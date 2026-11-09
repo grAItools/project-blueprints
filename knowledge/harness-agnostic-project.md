@@ -171,14 +171,14 @@ omp and opencode also scan `.claude/skills/`; verify that your versions deduplic
 
 Harness-specific directories do not ensure isolation. For incompatible skills, use a location other supported harnesses do not scan. If none exists, make the skill portable or keep it in its harness-specific directory and record unsupported harness/skill combinations in `.agents/README.md`. Recording a limitation does not resolve incompatibility.
 
-**The sync script** ([`.agents/scripts/sync-skills.sh`](references/sync-skills.sh)):
+**The sync script** ([`.agents/scripts/sync-skills.sh`](references/sync-skills.sh)): The full script is available as a runnable file at [`references/sync-skills.sh`](references/sync-skills.sh).
 
-The full script lives as a runnable file at [`references/sync-skills.sh`](references/sync-skills.sh). It exits 0 if the links are in sync and none are missing from the commit, 1 if it changed anything or a link or new skill is untracked or unstaged (so a pre-commit hook stops), 2 if something it doesn't manage is in the way, or git fails. It runs on macOS's bash 3.2, manages only links of the form `../../.agents/skills/<name>`, and conflicts stop it with exit 2.
+- Runs on macOS's bash 3.2.
+- Manages only links of the form `../../.agents/skills/<name>`; conflicts stop it with exit 2. Exclude hand-made, machine-local links (e.g., to `~/.agents/skills/`) through `.git/info/exclude` so staging checks ignore them.
 - Handles the adjacent `.agents/skills/`. Package-scoped skills need that package's own directory, script, and hook entry; root skills are visible repo-wide.
 - Creates symlinks only. On Windows, use Git Bash or WSL and enable `core.symlinks` plus Developer Mode (or admin rights) before cloning. Otherwise links check out as text files and trigger exit 2. Where symlinks are unavailable, implement a copy mode that tracks owned copies and removes stale ones.
 
 **Third-party skills** ([Vercel skills CLI](https://github.com/vercel-labs/skills)):
-
 ```bash
 npx skills add <repo>@<skill-name> -y
 .agents/scripts/sync-skills.sh
