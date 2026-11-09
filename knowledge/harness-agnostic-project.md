@@ -4,7 +4,7 @@ title: Harness-Agnostic Project Blueprint
 description: Standalone foundation for sharing instructions, skills, and tool configuration across supported AI coding harnesses, for both new and existing project repositories.
 tags: [blueprint, foundation, harness-agnostic]
 status: stable
-generated: { by: human:enriqueg, at: 2026-10-31T10:42:50+01:00 }
+generated: { by: human:enriqueg, at: 2026-11-09T17:18:43+01:00 }
 sources:
   - id: langchain-harness
     resource: https://www.langchain.com/blog/the-anatomy-of-an-agent-harness
@@ -38,7 +38,7 @@ sources:
     title: Claude Code skills documentation
   - id: claude-code-agents-scan-issue
     resource: https://github.com/anthropics/claude-code/issues/31005
-    title: Claude Code issue #31005 — request for native .agents/ scanning
+    title: "Claude Code issue #31005 — request for native .agents/ scanning"
   - id: mcp-spec
     resource: https://modelcontextprotocol.io
     title: Model Context Protocol
@@ -171,7 +171,7 @@ omp and opencode also scan `.claude/skills/`; verify that your versions deduplic
 
 Harness-specific directories do not ensure isolation. For incompatible skills, use a location other supported harnesses do not scan. If none exists, make the skill portable or keep it in its harness-specific directory and record unsupported harness/skill combinations in `.agents/README.md`. Recording a limitation does not resolve incompatibility.
 
-**The sync script** ([`.agents/scripts/sync-skills.sh`](references/sync-skills.sh)): The full script is available as a runnable file at [`references/sync-skills.sh`](references/sync-skills.sh).
+**The sync script**: [`references/sync-skills.sh`](references/sync-skills.sh). Copy it to `.agents/scripts/` before running; it is not runnable in place.
 
 - Runs on macOS's bash 3.2.
 - Manages only links of the form `../../.agents/skills/<name>`; conflicts stop it with exit 2. Exclude hand-made, machine-local links (e.g., to `~/.agents/skills/`) through `.git/info/exclude` so staging checks ignore them.
