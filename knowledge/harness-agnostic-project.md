@@ -12,12 +12,54 @@ sources:
   - id: agents-md
     resource: https://agents.md
     title: AGENTS.md — the AAIF/Linux Foundation standard
+  - id: agents-md-spec-repo
+    resource: https://github.com/agentsmd/agents.md
+    title: AGENTS.md specification repository
+  - id: agents-md-aaif
+    resource: https://aaif.io/
+    title: Agent and AI Framework Institute (AAIF)
   - id: agent-skills-spec
     resource: https://agentskills.io/specification
     title: Agent Skills specification
+  - id: agent-skills-site
+    resource: https://agentskills.io
+    title: Agent Skills site
+  - id: agent-skills-client-guide
+    resource: https://agentskills.io/client-implementation/adding-skills-support.md
+    title: Agent Skills client implementation guide
+  - id: skills-ref-cli
+    resource: https://github.com/agentskills/agentskills
+    title: skills-ref validation CLI
   - id: vercel-skills-cli
     resource: https://github.com/vercel-labs/skills
     title: Vercel skills CLI
+  - id: claude-code-skills-docs
+    resource: https://code.claude.com/docs/en/skills
+    title: Claude Code skills documentation
+  - id: claude-code-agents-scan-issue
+    resource: https://github.com/anthropics/claude-code/issues/31005
+    title: Claude Code issue #31005 — request for native .agents/ scanning
+  - id: mcp-spec
+    resource: https://modelcontextprotocol.io
+    title: Model Context Protocol
+  - id: figma-mcp-server
+    resource: https://mcp.figma.com/mcp
+    title: Figma MCP server
+  - id: codex-build-skills-docs
+    resource: https://learn.chatgpt.com/docs/build-skills
+    title: Codex build-skills documentation
+  - id: codex-config-basics-docs
+    resource: https://learn.chatgpt.com/docs/config-file/config-basic
+    title: Codex config basics documentation
+  - id: opencode-docs
+    resource: https://opencode.ai/docs/config/
+    title: opencode configuration documentation
+  - id: oh-my-pi-docs
+    resource: https://github.com/can1357/oh-my-pi/tree/main/docs
+    title: oh-my-pi documentation
+  - id: ssw-symlink-rule
+    resource: https://www.ssw.com.au/rules/symlink-agents-to-claude
+    title: SSW Rules — symlinking harness directories to Claude
 ---
 # Harness-Agnostic Project Blueprint
 

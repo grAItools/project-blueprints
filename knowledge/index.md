@@ -9,7 +9,7 @@ leveraging coding agents.
 
 * [Harness-Agnostic Project Blueprint](harness-agnostic-project.md) - Standalone foundation for sharing instructions, skills, and tool configuration across supported AI coding harnesses, for both new and existing project repositories.
 * [Python Project Repository Blueprint](python-project.md) - Shared Python baseline for solo maintainers and small teams, with strong automated checks and little coordination overhead.
-* [Python Project Community Extension](python-project-community.md) - Extends the Python baseline with contributor governance, compatibility commitments, downstream testing, and shared release/access processes; includes applicable Scientific Python SPEC guidance.
+* [Python Project Community Extension](python-project-community.md) - Extends the Python baseline with contributor governance, compatibility commitments, downstream testing, and shared release/access processes, including applicable Scientific Python SPEC guidance.
 
 Use the foundation, then the Python baseline. Add the community extension when
 external contributions, shared maintainership, downstream consumers, or ecosystem
