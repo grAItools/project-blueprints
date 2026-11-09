@@ -179,6 +179,7 @@ Harness-specific directories do not ensure isolation. For incompatible skills, u
 - Creates symlinks only. On Windows, use Git Bash or WSL and enable `core.symlinks` plus Developer Mode (or admin rights) before cloning. Otherwise links check out as text files and trigger exit 2. Where symlinks are unavailable, implement a copy mode that tracks owned copies and removes stale ones.
 
 **Third-party skills** ([Vercel skills CLI](https://github.com/vercel-labs/skills)):
+
 ```bash
 npx skills add <repo>@<skill-name> -y
 .agents/scripts/sync-skills.sh
