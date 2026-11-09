@@ -1,3 +1,72 @@
+---
+type: Project Blueprint
+title: Python Project Repository Blueprint
+description: Shared Python baseline for solo maintainers and small teams, with strong automated checks and little coordination overhead.
+tags: [blueprint, python, baseline]
+status: stable
+generated: { by: human:enriqueg, at: 2026-10-31T14:12:51+01:00 }
+sources:
+  - id: uv-sync
+    resource: https://docs.astral.sh/uv/concepts/projects/sync/
+    title: uv locking and syncing
+  - id: uv-build
+    resource: https://docs.astral.sh/uv/concepts/projects/build/
+    title: uv distribution builds
+  - id: uv-cli-reference
+    resource: https://docs.astral.sh/uv/reference/cli/#uv-build
+    title: uv CLI reference
+  - id: uv-resolution-strategies
+    resource: https://docs.astral.sh/uv/concepts/resolution/#resolution-strategy
+    title: uv resolution strategies
+  - id: hatchling-history
+    resource: https://hatch.pypa.io/latest/history/hatchling/#1270-2024-11-26
+    title: Hatchling release history
+  - id: hatch-file-selection
+    resource: https://hatch.pypa.io/latest/config/build/#file-selection
+    title: Hatch file selection
+  - id: hatch-sdist-defaults
+    resource: https://hatch.pypa.io/latest/plugins/builder/sdist/#default-file-selection
+    title: Hatch sdist defaults
+  - id: scipy-dev-guide-style
+    resource: https://learn.scientific-python.org/development/guides/style/
+    title: Scientific Python style guide
+  - id: scipy-dev-guide-pytest
+    resource: https://learn.scientific-python.org/development/guides/pytest/
+    title: Scientific Python pytest guide
+  - id: scipy-dev-guide-docs
+    resource: https://learn.scientific-python.org/development/guides/docs/
+    title: Scientific Python docs guide
+  - id: scipy-dev-guide-security
+    resource: https://learn.scientific-python.org/development/guides/security/
+    title: Scientific Python CI security recommendations
+  - id: coverage-data-paths
+    resource: https://coverage.readthedocs.io/en/latest/config.html#run-relative-files
+    title: Coverage data paths
+  - id: diataxis
+    resource: https://diataxis.fr/
+    title: Diátaxis framework
+  - id: mdformat-mkdocs-plugin
+    resource: https://github.com/KyleKing/mdformat-mkdocs
+    title: mdformat-mkdocs
+  - id: pyright-python-wrapper
+    resource: https://github.com/RobertCraigie/pyright-python
+    title: pyright wrapper
+  - id: pyright-config
+    resource: https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+    title: Pyright configuration
+  - id: github-rulesets
+    resource: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets
+    title: GitHub rulesets
+  - id: github-workflow-dispatch-refs
+    resource: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
+    title: GitHub workflow dispatch refs
+  - id: pypi-trusted-publishers
+    resource: https://docs.pypi.org/trusted-publishers/adding-a-publisher/
+    title: PyPI trusted-publisher documentation
+  - id: twine-changelog
+    resource: https://twine.readthedocs.io/en/stable/changelog.html#twine-6-1-0-2025-01-17
+    title: Twine changelog
+---
 # Python Project Repository Blueprint
 
 This blueprint defines a development stack for installable Python libraries

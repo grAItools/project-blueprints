@@ -1,3 +1,66 @@
+---
+type: Project Blueprint
+title: Harness-Agnostic Project Blueprint
+description: Standalone foundation for sharing instructions, skills, and tool configuration across supported AI coding harnesses, for both new and existing project repositories.
+tags: [blueprint, foundation, harness-agnostic]
+status: stable
+generated: { by: human:enriqueg, at: 2026-11-09T17:18:43+01:00 }
+sources:
+  - id: langchain-harness
+    resource: https://www.langchain.com/blog/the-anatomy-of-an-agent-harness
+    title: The anatomy of an agent harness
+  - id: agents-md
+    resource: https://agents.md
+    title: AGENTS.md — the AAIF/Linux Foundation standard
+  - id: agents-md-spec-repo
+    resource: https://github.com/agentsmd/agents.md
+    title: AGENTS.md specification repository
+  - id: agents-md-aaif
+    resource: https://aaif.io/
+    title: Agent and AI Framework Institute (AAIF)
+  - id: agent-skills-spec
+    resource: https://agentskills.io/specification
+    title: Agent Skills specification
+  - id: agent-skills-site
+    resource: https://agentskills.io
+    title: Agent Skills site
+  - id: agent-skills-client-guide
+    resource: https://agentskills.io/client-implementation/adding-skills-support.md
+    title: Agent Skills client implementation guide
+  - id: skills-ref-cli
+    resource: https://github.com/agentskills/agentskills
+    title: skills-ref validation CLI
+  - id: vercel-skills-cli
+    resource: https://github.com/vercel-labs/skills
+    title: Vercel skills CLI
+  - id: claude-code-skills-docs
+    resource: https://code.claude.com/docs/en/skills
+    title: Claude Code skills documentation
+  - id: claude-code-agents-scan-issue
+    resource: https://github.com/anthropics/claude-code/issues/31005
+    title: "Claude Code issue #31005 — request for native .agents/ scanning"
+  - id: mcp-spec
+    resource: https://modelcontextprotocol.io
+    title: Model Context Protocol
+  - id: figma-mcp-server
+    resource: https://mcp.figma.com/mcp
+    title: Figma MCP server
+  - id: codex-build-skills-docs
+    resource: https://learn.chatgpt.com/docs/build-skills
+    title: Codex build-skills documentation
+  - id: codex-config-basics-docs
+    resource: https://learn.chatgpt.com/docs/config-file/config-basic
+    title: Codex config basics documentation
+  - id: opencode-docs
+    resource: https://opencode.ai/docs/config/
+    title: opencode configuration documentation
+  - id: oh-my-pi-docs
+    resource: https://github.com/can1357/oh-my-pi/tree/main/docs
+    title: oh-my-pi documentation
+  - id: ssw-symlink-rule
+    resource: https://www.ssw.com.au/rules/symlink-agents-to-claude
+    title: SSW Rules — symlinking harness directories to Claude
+---
 # Harness-Agnostic Project Blueprint
 
 Share project instructions, skills, and tool configuration across AI coding
@@ -108,100 +171,7 @@ omp and opencode also scan `.claude/skills/`; verify that your versions deduplic
 
 Harness-specific directories do not ensure isolation. For incompatible skills, use a location other supported harnesses do not scan. If none exists, make the skill portable or keep it in its harness-specific directory and record unsupported harness/skill combinations in `.agents/README.md`. Recording a limitation does not resolve incompatibility.
 
-**The sync script** (`.agents/scripts/sync-skills.sh`):
-
-```bash
-#!/usr/bin/env bash
-# Exits 0 if the links are in sync and none are missing from the commit, 1 if it changed
-# anything or a link or new skill is untracked or unstaged (so a pre-commit hook stops),
-# 2 if something it doesn't manage is in the way, or git fails.
-set -euo pipefail
-
-AGENTS_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-REPO_ROOT="$(cd "$AGENTS_DIR/.." && pwd)"
-MANAGED="../../.agents/skills"
-# Harnesses that don't discover .agents/skills/ natively
-TARGETS=(".claude/skills")
-# Harnesses that do (omp, opencode) and leftovers from older setups: never sync here, only
-# clean up old links
-NATIVE=(".omp/skills" ".opencode/skills" ".codex/skills")
-changed=0
-
-# The script owns only links of the exact form it creates: $MANAGED/<one skill name>
-is_managed() {
-    local name="${1#"$MANAGED"/}"
-    [ "$name" != "$1" ] && [ -n "$name" ] && [[ "$name" != */* ]] &&
-        [ "$name" != "." ] && [ "$name" != ".." ]
-}
-
-for target_dir in "${TARGETS[@]}"; do
-    if [ -L "$REPO_ROOT/$target_dir" ]; then
-        # Linking the whole dir (e.g., .claude/skills -> ../.agents/skills) already covers it
-        [ "$(readlink "$REPO_ROOT/$target_dir")" = "../.agents/skills" ] && continue
-        echo "ERROR: $target_dir is a symlink to somewhere other than .agents/skills." >&2; exit 2
-    fi
-    mkdir -p "$REPO_ROOT/$target_dir"
-
-    for skill_dir in "$AGENTS_DIR"/skills/*/; do
-        [ -d "$skill_dir" ] || continue
-        name="$(basename "$skill_dir")"
-        link_target="$MANAGED/$name"
-        link_path="$REPO_ROOT/$target_dir/$name"
-
-        if [ -L "$link_path" ]; then
-            current="$(readlink "$link_path")"
-            [ "$current" = "$link_target" ] && continue
-            if ! is_managed "$current"; then
-                echo "ERROR: $link_path is a hand-made link to $current; rename one of the skills." >&2; exit 2
-            fi
-            rm "$link_path"
-        elif [ -e "$link_path" ]; then
-            echo "ERROR: $link_path exists but is not a symlink." >&2; exit 2
-        fi
-
-        ln -s "$link_target" "$link_path"
-        echo "Synced: $link_path -> $link_target"; changed=1
-    done
-
-    # Prune links to skills that no longer exist (including dangling ones)
-    for link in "$REPO_ROOT/$target_dir"/*; do
-        [ -L "$link" ] || continue
-        target="$(readlink "$link")"
-        is_managed "$target" || continue
-        [ -d "$AGENTS_DIR/skills/${target#"$MANAGED"/}" ] && continue
-        rm "$link"; echo "Pruned: $link"; changed=1
-    done
-done
-
-# Remove old links from harnesses that read .agents/skills/ natively (they duplicate skills)
-for native_dir in "${NATIVE[@]}"; do
-    if [ -L "$REPO_ROOT/$native_dir" ]; then
-        # Never prune through a dir alias: it could point at .claude/skills or .agents/skills
-        echo "ERROR: $native_dir is a symlink; this harness reads .agents/skills/ natively, so remove it." >&2; exit 2
-    fi
-    for link in "$REPO_ROOT/$native_dir"/*; do
-        [ -L "$link" ] || continue
-        is_managed "$(readlink "$link")" || continue
-        rm "$link"; echo "Pruned (reads .agents/skills/ natively): $link"; changed=1
-    done
-done
-
-# Fail while a link or a new skill would be left out of the commit
-if git -C "$REPO_ROOT" rev-parse --git-dir >/dev/null 2>&1; then
-    links="$(git -C "$REPO_ROOT" status --porcelain --untracked-files=all -- "${TARGETS[@]}" "${NATIVE[@]}")" ||
-        { echo "ERROR: git status failed." >&2; exit 2; }
-    skills="$(git -C "$REPO_ROOT" status --porcelain --untracked-files=all -- .agents/skills)" ||
-        { echo "ERROR: git status failed." >&2; exit 2; }
-    # Second status column set: not staged (or untracked) yet
-    pending="$({ printf '%s\n' "$links" | grep '^.[^ ]'; printf '%s\n' "$skills" | grep '^??'; } || true)"
-    if [ -n "$pending" ]; then
-        echo "Not staged yet (stage them, or move draft skills to .agents/skills-local/):" >&2
-        echo "$pending" >&2; changed=1
-    fi
-fi
-
-exit "$changed"
-```
+**The sync script**: [`references/sync-skills.sh`](references/sync-skills.sh). Copy it to `.agents/scripts/` before running; it is not runnable in place.
 
 - Runs on macOS's bash 3.2.
 - Manages only links of the form `../../.agents/skills/<name>`; conflicts stop it with exit 2. Exclude hand-made, machine-local links (e.g., to `~/.agents/skills/`) through `.git/info/exclude` so staging checks ignore them.

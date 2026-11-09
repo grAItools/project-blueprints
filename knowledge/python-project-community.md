@@ -1,3 +1,42 @@
+---
+type: Project Blueprint
+title: Python Project Community Extension
+description: Extends the Python baseline with contributor governance, compatibility commitments, downstream testing, and shared release/access processes, including applicable Scientific Python SPEC guidance.
+tags: [blueprint, python, community, governance]
+status: stable
+generated: { by: human:enriqueg, at: 2026-10-31T14:12:51+01:00 }
+sources:
+  - id: spec-0000
+    resource: https://scientific-python.org/specs/spec-0000/
+    title: SPEC 0 — minimum dependencies
+  - id: spec-0004
+    resource: https://scientific-python.org/specs/spec-0004/
+    title: SPEC 4 — nightly wheels
+  - id: spec-0005
+    resource: https://scientific-python.org/specs/spec-0005/
+    title: SPEC 5 — CI
+  - id: spec-0008
+    resource: https://scientific-python.org/specs/spec-0008/
+    title: SPEC 8 — Secure releases
+  - id: spec-0006
+    resource: https://scientific-python.org/specs/spec-0006/
+    title: SPEC 6 — Resource access
+  - id: spec-0009
+    resource: https://scientific-python.org/specs/spec-0009/
+    title: SPEC 9 — governance
+  - id: specs-index
+    resource: https://scientific-python.org/specs/
+    title: Scientific Python SPECs index
+  - id: repo-review
+    resource: https://repo-review.readthedocs.io/en/latest/
+    title: repo-review
+  - id: scipy-dev-guide
+    resource: https://learn.scientific-python.org/development/
+    title: Scientific Python Development Guide
+  - id: github-env-protections
+    resource: https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments
+    title: GitHub environment protections
+---
 # Python Project Community Extension
 
 This document extends the [Python Project Repository Blueprint](python-project.md),
