@@ -1,7 +1,7 @@
 # Directory Update Log
 
 ## 2026-11-09
-* **Update**: Converted the repository into an OKF v0.2 knowledge bundle; established [knowledge/](.) as the bundle root with [index](index.md) and [log](log.md).
+* **Update**: Converted the repository into an OKF v0.2 knowledge bundle; established [knowledge/](.) as the bundle root with [index](index.md) and [log](log.md). Addressed independent PR review findings in 92e1f94 (sources completion, log completeness, verbatim descriptions).
 
 ## 2026-10-31
 * **Update**: Finalized Python project profiles and release safeguards; merged PR #1 (audit-scientific-python-guide-blueprint).

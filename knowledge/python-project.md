@@ -42,7 +42,7 @@ sources:
   - id: coverage-data-paths
     resource: https://coverage.readthedocs.io/en/latest/config.html#run-relative-files
     title: Coverage data paths
-  - id: diataxs
+  - id: diataxis
     resource: https://diataxis.fr/
     title: Diátaxis framework
   - id: mdformat-mkdocs-plugin
