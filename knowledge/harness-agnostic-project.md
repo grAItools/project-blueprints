@@ -1,3 +1,24 @@
+---
+type: Project Blueprint
+title: Harness-Agnostic Project Blueprint
+description: Standalone foundation for sharing instructions, skills, and tool configuration across supported AI coding harnesses, for both new and existing project repositories.
+tags: [blueprint, foundation, harness-agnostic]
+status: stable
+generated: { by: human:enriqueg, at: 2026-10-31T10:42:50+01:00 }
+sources:
+  - id: langchain-harness
+    resource: https://www.langchain.com/blog/the-anatomy-of-an-agent-harness
+    title: The anatomy of an agent harness
+  - id: agents-md
+    resource: https://agents.md
+    title: AGENTS.md — the AAIF/Linux Foundation standard
+  - id: agent-skills-spec
+    resource: https://agentskills.io/specification
+    title: Agent Skills specification
+  - id: vercel-skills-cli
+    resource: https://github.com/vercel-labs/skills
+    title: Vercel skills CLI
+---
 # Harness-Agnostic Project Blueprint
 
 Share project instructions, skills, and tool configuration across AI coding

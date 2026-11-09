@@ -1,3 +1,21 @@
+---
+type: Project Blueprint
+title: Python Project Repository Blueprint
+description: Shared Python baseline for solo maintainers and small teams, with strong automated checks and little coordination overhead.
+tags: [blueprint, python, baseline]
+status: stable
+generated: { by: human:enriqueg, at: 2026-10-31T14:12:51+01:00 }
+sources:
+  - id: uv-sync
+    resource: https://docs.astral.sh/uv/concepts/projects/sync/
+    title: uv locking and syncing
+  - id: hatchling-history
+    resource: https://hatch.pypa.io/latest/history/hatchling/#1270-2024-11-26
+    title: Hatchling release history
+  - id: scientific-python-dev-guide
+    resource: https://learn.scientific-python.org/development/
+    title: Scientific Python Development Guide
+---
 # Python Project Repository Blueprint
 
 This blueprint defines a development stack for installable Python libraries
